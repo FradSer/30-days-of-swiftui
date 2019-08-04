@@ -16,9 +16,12 @@ import Foundation
 struct ContentView: View {
     
     @State var timeCount: Double = 0.0
+    @State var clickCouut: Int = 0
     
     var timer: Timer {
-        Timer.scheduledTimer(withTimeInterval: 0.01, repeats: true) {_ in self.timeCount = Double()}
+        Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) {timer in
+            self.timeCount += 0.1
+        }
     }
     
     var body: some View {
@@ -34,9 +37,9 @@ struct ContentView: View {
                                 .italic()
                                 .foregroundColor(Color.white)
                                 .onAppear(perform: {
-//                                    let _ = self.timer
-                                    self.timeCount += 0.01
+                                    let _ = self.timer
                                 })
+
                             Text("s")
                                 .font(.system(size: 60, weight: .black))
                                 .italic()
@@ -50,8 +53,12 @@ struct ContentView: View {
                     Spacer()
                     
                     VStack {
-                        Button(action: {self.timeCount += 1.0}) {
-                            Text("+1 s")
+                        Button(action: {
+                            self.timeCount += 1.0
+                            self.clickCouut += 1
+                            print("Total plus:", self.clickCouut)
+                        }) {
+                            Text("+1s")
                                 .font(.system(size: 34, weight: .black))
                                 .foregroundColor(Color.white)
                         }
@@ -60,7 +67,7 @@ struct ContentView: View {
                         .cornerRadius(16)
                         .shadow(color: Color.black.opacity(0.25), radius: 16, x: 0, y: 4)
                         
-                        Text("a little work")
+                        Text("a little work with ⌚️")
                             .foregroundColor(Color.black.opacity(0.5))
                             .font(.system(size: 17, weight: .regular))
                             .italic()
@@ -72,7 +79,7 @@ struct ContentView: View {
         }
     }
     func timeString(time: Double) -> String {
-        return String(format: "%.2f", time)
+        return String(format: "%.1f", time)
     }
 }
 
