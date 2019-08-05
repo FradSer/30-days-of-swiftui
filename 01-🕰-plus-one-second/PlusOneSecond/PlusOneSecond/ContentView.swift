@@ -67,7 +67,7 @@ struct ContentView: View {
                         .cornerRadius(16)
                         .shadow(color: Color.black.opacity(0.25), radius: 16, x: 0, y: 4)
                         
-                        Text("a little work with ⌚️")
+                        Text("a little work with 🕰")
                             .foregroundColor(Color.black.opacity(0.5))
                             .font(.system(size: 17, weight: .regular))
                             .italic()
