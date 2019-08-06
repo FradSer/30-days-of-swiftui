@@ -1,7 +1,7 @@
 
 # C02 - 🔛 Dark Mode Test
 
-A dark mode with custom typeface display.
+Dark mode test with custom typeface display.
 
 ## Notes
 
