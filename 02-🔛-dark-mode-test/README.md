@@ -3,6 +3,8 @@
 
 Dark mode test with custom typeface display.
 
+![](../docs/assets/images/02.gif)
+
 ## Notes
 
 ### Custom Font
@@ -18,9 +20,9 @@ Text("foobar")
 
 ### HEX Color to `UIColor`
 
-`F3` in [hexadecimal](https://en.wikipedia.org/wiki/Hexadecimal "Hexadecimal - Wikipedia") equals `0.95` in [`Double`](https://en.wikipedia.org/wiki/Double-precision_floating-point_format "Double-precision floating-point format - Wikipedia"). 
+`F3` in [hexadecimal](https://en.wikipedia.org/wiki/Hexadecimal "Hexadecimal - Wikipedia") equals `0.95` in [`Double`](https://en.wikipedia.org/wiki/Double-precision_floating-point_format "Double-precision floating-point format - Wikipedia").
 
-Example: `#F3F1EC` in HEX is `UIColor(red:0.95, green:0.95, blue:0.93, alpha:1.0)` in Swift. 
+Example: `#F3F1EC` in HEX is `UIColor(red:0.95, green:0.95, blue:0.93, alpha:1.0)` in Swift.
 
 Tips:
 
@@ -53,7 +55,7 @@ Steps:
 
 ### Changing in Different Appearance
 
-I want to show "Light" in light appearance, and "Dark" in dark appearance. 
+I want to show "Light" in light appearance, and "Dark" in dark appearance.
 
 Getting the `\.colorScheme` environment with: `@Environment(\.colorScheme) var colorScheme: ColorScheme`,  then use it: `Text(colorScheme  == .light ? "Light" : "Dark")`.
 
