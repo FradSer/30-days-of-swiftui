@@ -10,6 +10,10 @@
 
 ![](./docs/assets/images/02.gif)
 
+### [C03 - 🌈 Color Mixer](./03-🌈-color-mixer)
+
+![](./docs/assets/images/03.gif)
+
 ## Authors
 
 * **Frad Lee** - *Initial work* - [@FradSer](https://twitter.com/fradser)
