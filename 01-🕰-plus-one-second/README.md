@@ -2,6 +2,8 @@
 
 Timer with a button to plus one second per click.
 
+![](../docs/assets/images/01.gif)
+
 ## Notes
 
 ### The Timer Logic
