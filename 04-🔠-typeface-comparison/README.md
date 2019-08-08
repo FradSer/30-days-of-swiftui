@@ -1,5 +1,9 @@
 # C04 - 🔠 Typeface Comparison
 
+A 3D rotate typeface comparison.
+
+![](../docs/assets/images/04.gif)
+
 ## Notes
 
 ### Fixed Size
