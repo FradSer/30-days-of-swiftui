@@ -28,6 +28,12 @@
 
 ![](./docs/assets/images/04.gif)
 
+### [C05 - 🐱 Cat Scene](./05-🐱-cat-scene)
+
+![](https://img.shields.io/badge/Xcode-11.0%20beta%205-%231575F9) ![](https://img.shields.io/badge/Swift-5.1-%23FA7343)
+
+![](./docs/assets/images/05.gif)
+
 ## Authors
 
 * **Frad Lee** - *Initial work* - [@FradSer](https://twitter.com/fradser)
