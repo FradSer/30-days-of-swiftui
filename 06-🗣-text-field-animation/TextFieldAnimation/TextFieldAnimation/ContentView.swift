@@ -35,7 +35,7 @@ struct ContentView: View {
                                 Color.white.frame(width: 0, height: 0).offset(x: 64.0 - (UIScreen.main.bounds.size.width / 2.0))
                         )
                         .cornerRadius(16)
-                        .animation(.spring())
+                        .animation(.spring(response: 1.0))
                     }
                     .padding(.horizontal,32)
                     .onTapGesture {
