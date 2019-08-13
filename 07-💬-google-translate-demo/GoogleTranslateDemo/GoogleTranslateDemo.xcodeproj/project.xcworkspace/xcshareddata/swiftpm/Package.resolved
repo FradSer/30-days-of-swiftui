@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "SwiftGoogleTranslate",
+        "repositoryURL": "https://github.com/maximbilan/SwiftGoogleTranslate",
+        "state": {
+          "branch": "master",
+          "revision": "7812b4dcb57e095224ae5e9dbf4f178f9296b147",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}

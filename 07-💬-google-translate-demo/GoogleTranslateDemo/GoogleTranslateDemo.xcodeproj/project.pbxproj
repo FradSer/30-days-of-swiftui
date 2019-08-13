@@ -1,0 +1,374 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CB6921012303184B0076E8DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6921002303184B0076E8DB /* AppDelegate.swift */; };
+		CB6921032303184B0076E8DB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6921022303184B0076E8DB /* SceneDelegate.swift */; };
+		CB6921052303184B0076E8DB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB6921042303184B0076E8DB /* ContentView.swift */; };
+		CB6921072303184D0076E8DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB6921062303184D0076E8DB /* Assets.xcassets */; };
+		CB69210A2303184D0076E8DB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB6921092303184D0076E8DB /* Preview Assets.xcassets */; };
+		CB69210D2303184D0076E8DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB69210B2303184D0076E8DB /* LaunchScreen.storyboard */; };
+		CB69211623031C060076E8DB /* SwiftGoogleTranslate in Frameworks */ = {isa = PBXBuildFile; productRef = CB69211523031C060076E8DB /* SwiftGoogleTranslate */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CB6920FD2303184B0076E8DB /* GoogleTranslateDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoogleTranslateDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB6921002303184B0076E8DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CB6921022303184B0076E8DB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CB6921042303184B0076E8DB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CB6921062303184D0076E8DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CB6921092303184D0076E8DB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CB69210C2303184D0076E8DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CB69210E2303184D0076E8DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CB6920FA2303184B0076E8DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB69211623031C060076E8DB /* SwiftGoogleTranslate in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CB6920F42303184B0076E8DB = {
+			isa = PBXGroup;
+			children = (
+				CB6920FF2303184B0076E8DB /* GoogleTranslateDemo */,
+				CB6920FE2303184B0076E8DB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CB6920FE2303184B0076E8DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB6920FD2303184B0076E8DB /* GoogleTranslateDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CB6920FF2303184B0076E8DB /* GoogleTranslateDemo */ = {
+			isa = PBXGroup;
+			children = (
+				CB6921002303184B0076E8DB /* AppDelegate.swift */,
+				CB6921022303184B0076E8DB /* SceneDelegate.swift */,
+				CB6921042303184B0076E8DB /* ContentView.swift */,
+				CB6921062303184D0076E8DB /* Assets.xcassets */,
+				CB69210B2303184D0076E8DB /* LaunchScreen.storyboard */,
+				CB69210E2303184D0076E8DB /* Info.plist */,
+				CB6921082303184D0076E8DB /* Preview Content */,
+			);
+			path = GoogleTranslateDemo;
+			sourceTree = "<group>";
+		};
+		CB6921082303184D0076E8DB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CB6921092303184D0076E8DB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CB6920FC2303184B0076E8DB /* GoogleTranslateDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB6921112303184D0076E8DB /* Build configuration list for PBXNativeTarget "GoogleTranslateDemo" */;
+			buildPhases = (
+				CB6920F92303184B0076E8DB /* Sources */,
+				CB6920FA2303184B0076E8DB /* Frameworks */,
+				CB6920FB2303184B0076E8DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoogleTranslateDemo;
+			packageProductDependencies = (
+				CB69211523031C060076E8DB /* SwiftGoogleTranslate */,
+			);
+			productName = GoogleTranslateDemo;
+			productReference = CB6920FD2303184B0076E8DB /* GoogleTranslateDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CB6920F52303184B0076E8DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "Frad LEE";
+				TargetAttributes = {
+					CB6920FC2303184B0076E8DB = {
+						CreatedOnToolsVersion = 11.0;
+					};
+				};
+			};
+			buildConfigurationList = CB6920F82303184B0076E8DB /* Build configuration list for PBXProject "GoogleTranslateDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CB6920F42303184B0076E8DB;
+			packageReferences = (
+				CB69211423031C060076E8DB /* XCRemoteSwiftPackageReference "SwiftGoogleTranslate" */,
+			);
+			productRefGroup = CB6920FE2303184B0076E8DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CB6920FC2303184B0076E8DB /* GoogleTranslateDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CB6920FB2303184B0076E8DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB69210D2303184D0076E8DB /* LaunchScreen.storyboard in Resources */,
+				CB69210A2303184D0076E8DB /* Preview Assets.xcassets in Resources */,
+				CB6921072303184D0076E8DB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CB6920F92303184B0076E8DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB6921012303184B0076E8DB /* AppDelegate.swift in Sources */,
+				CB6921032303184B0076E8DB /* SceneDelegate.swift in Sources */,
+				CB6921052303184B0076E8DB /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CB69210B2303184D0076E8DB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB69210C2303184D0076E8DB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CB69210F2303184D0076E8DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CB6921102303184D0076E8DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CB6921122303184D0076E8DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "GoogleTranslateDemo/Preview\\ Content";
+				DEVELOPMENT_TEAM = 6494F8NQFF;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = GoogleTranslateDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.frad.GoogleTranslateDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CB6921132303184D0076E8DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "GoogleTranslateDemo/Preview\\ Content";
+				DEVELOPMENT_TEAM = 6494F8NQFF;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = GoogleTranslateDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.frad.GoogleTranslateDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CB6920F82303184B0076E8DB /* Build configuration list for PBXProject "GoogleTranslateDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB69210F2303184D0076E8DB /* Debug */,
+				CB6921102303184D0076E8DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB6921112303184D0076E8DB /* Build configuration list for PBXNativeTarget "GoogleTranslateDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB6921122303184D0076E8DB /* Debug */,
+				CB6921132303184D0076E8DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CB69211423031C060076E8DB /* XCRemoteSwiftPackageReference "SwiftGoogleTranslate" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/maximbilan/SwiftGoogleTranslate";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CB69211523031C060076E8DB /* SwiftGoogleTranslate */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB69211423031C060076E8DB /* XCRemoteSwiftPackageReference "SwiftGoogleTranslate" */;
+			productName = SwiftGoogleTranslate;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = CB6920F52303184B0076E8DB /* Project object */;
+}
