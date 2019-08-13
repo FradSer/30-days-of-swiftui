@@ -2,6 +2,8 @@
 
 ![Twitter Follow](https://img.shields.io/twitter/follow/FradSer?style=social)
 
+![](./docs/assets/images/github-social-preview.png)
+
 ## Challenges
 
 ### [C01 - 🕰 Plus One Second](./01-🕰-plus-one-second)
