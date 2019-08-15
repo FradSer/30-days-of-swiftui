@@ -8,51 +8,11 @@
 
 import SwiftUI
 
-struct card: Identifiable {
-    let id: Int
-    let name: String
-    let content: String
-    let color: Color
-}
-
 struct ContentView: View {
-    var cardList = [
-        card(id: 2, name: "Red Card", content:"Triangle", color: Color.red),
-        card(id: 1, name: "Yellow Card", content:"Square", color: Color.yellow),
-        card(id: 0, name: "Blue Card", content:"Circle", color: Color.blue),
-    ]
-    
-    var body: some View {
-        return ZStack {
-            Rectangle()
-                .foregroundColor(Color(red: 0.95, green: 0.94, blue: 0.92, opacity: 1.0))
-                .edgesIgnoringSafeArea(.all)
-//            VStack {
-//                Spacer()
-            ForEach(cardList) { card in
-                CardView(index: Double(card.id), name: card.name, content: card.content, color: card.color )
-            }
-//                Spacer()
-            Text("a little work with 🎴")
-                .foregroundColor(Color.black.opacity(0.5))
-                .font(.system(size: 17, weight: .regular))
-                .italic()
-                .padding(.top, 16)
-                .padding(.bottom, 16)
-//            }
-        }
-//        func changeZIndx() {
-//        }
-    }
-}
-
-struct CardView: View {
-    @State var index: Double
-    let name: String
-    let content : String
-    let color : Color
-    
-    @State var randomDegrees : Double = Double.random(in: -18...18)
+    @State var list: [Int] = [0, -1, -2]
+    @State var color: [Color] = [.red, .yellow, .blue]
+    @State var content: [String] = ["Triangle", "Square", "Circle"]
+    @State var degrees: [Double] = [-9, 9, 18]
     
     enum DragState {
         case inactive
@@ -74,25 +34,73 @@ struct CardView: View {
             }
         }
     }
-    
     @GestureState var dragState = DragState.inactive
     @State var viewState = CGSize.zero
     
     var body: some View {
-        
         let gesture = DragGesture()
-        .updating($dragState) { (value, dragInfo, _) in
-            dragInfo = .active(translation: value.translation)
-        }
-        .onEnded {_ in
-//            self.index += 1.0
-            self.randomDegrees = Double.random(in: -36...36)
+            .updating($dragState) { (value, dragInfo, _) in
+                dragInfo = .active(translation: value.translation)
+
+            }
+            .onEnded{_ in
+                self.list = self.f(self.list)
+            }
+
+        return ZStack {
+            Rectangle()
+                .foregroundColor(Color(red: 0.95, green: 0.94, blue: 0.92, opacity: 1.0))
+                .edgesIgnoringSafeArea(.all)
+            ZStack {
+                ForEach(0..<self.list.count, id: \.self) { i in
+                    CardView(index: Double(self.list[i]),content: self.content[i], color: self.color[i])
+                        .scaleEffect(self.list[i] == 0 ? (self.dragState.isActive ? 1.2 : 1.0) : 1.0)
+                        .rotationEffect(Angle(degrees:
+                            self.dragState.isActive ? 0 : (
+                                self.list[i] == 0 ? 0 : (
+                                    self.list[i] == -1 ? Double.random(in: 0...24) : (
+                                        self.list[i] == -2 ? Double.random(in: -24...0) : 0
+                                    )
+                                )
+                            )
+                        ))
+                        .gesture(gesture)
+                        .offset(
+                            x: self.list[i] == 0 ? self.viewState.width + self.dragState.translation.width * 0.8 : .zero,
+                            y: self.list[i] == 0 ? self.viewState.height + self.dragState.translation.height * 0.8 : .zero
+                        )
+                        .animation(.spring())
+                }
+            }
+            VStack {
+                Spacer()
+                Text("a little work with 🎴")
+                    .foregroundColor(Color.black.opacity(0.5))
+                    .font(.system(size: 17, weight: .regular))
+                    .italic()
+                    .padding(.top, 16)
+                    .padding(.bottom, 16)
+            }
         }
         
+    }
+    func f(_ list: [Int]) -> [Int] {
+        var a = list
+        let b = a.removeLast()
+        a.insert(b, at: 0 )
+        return a
+    }
+}
+
+struct CardView: View {
+    let index: Double
+    let content : String
+    let color : Color
+
+    var body: some View {
         return ZStack {
-            Spacer()
-                .background(color)
-                .cornerRadius(16)
+            RoundedRectangle(cornerRadius: 16)
+                .foregroundColor(color)
                 .shadow(color: Color.black.opacity(0.25), radius: 16)
             if content == "Circle" {
                 Circle()
@@ -113,15 +121,6 @@ struct CardView: View {
         }
         .frame(width: 264, height: 400, alignment: .center)
         .zIndex(index)
-        .rotationEffect(Angle.init(degrees: index == 2.0 ? 0.0 : randomDegrees))
-        .scaleEffect(dragState.isActive ? 1.1 : 1.0)
-//        .gesture(index == 2.0 ? gesture : nil)
-        .gesture(gesture)
-        .offset(
-            x: viewState.width + dragState.translation.width * 0.8,
-            y: viewState.height + dragState.translation.height * 0.8
-        )
-        .animation(.spring())
     }
 }
 
