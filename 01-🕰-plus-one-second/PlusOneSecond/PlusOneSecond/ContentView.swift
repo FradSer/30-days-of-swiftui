@@ -6,10 +6,6 @@
 //  Copyright © 2019 Frad LEE. All rights reserved.
 //
 
-// https://medium.com/@max.codes/build-a-basic-counter-app-with-swiftui-in-xcode-11-6b5d895830e7
-// https://medium.com/ios-os-x-development/build-an-stopwatch-with-swift-3-0-c7040818a10f
-// https://medium.com/better-programming/make-a-simple-countdown-with-timer-and-swiftui-3ce355b54986
-
 import SwiftUI
 import Foundation
 
