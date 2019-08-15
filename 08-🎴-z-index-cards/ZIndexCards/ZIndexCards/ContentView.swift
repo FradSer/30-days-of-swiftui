@@ -21,7 +21,7 @@ struct ContentView: View {
         card(id: 1, name: "Yellow Card", content:"Square", color: Color.yellow),
         card(id: 0, name: "Blue Card", content:"Circle", color: Color.blue),
     ]
-
+    
     var body: some View {
         return ZStack {
             Rectangle()
@@ -30,7 +30,7 @@ struct ContentView: View {
 //            VStack {
 //                Spacer()
             ForEach(cardList) { card in
-                CardView(color: card.color, index: Double(card.id), content: card.content, name: card.name)
+                CardView(index: Double(card.id), name: card.name, content: card.content, color: card.color )
             }
 //                Spacer()
             Text("a little work with 🎴")
@@ -41,14 +41,18 @@ struct ContentView: View {
                 .padding(.bottom, 16)
 //            }
         }
+//        func changeZIndx() {
+//        }
     }
 }
 
 struct CardView: View {
-    let color : Color
     @State var index: Double
-    let content : String
     let name: String
+    let content : String
+    let color : Color
+    
+    @State var randomDegrees : Double = Double.random(in: -18...18)
     
     enum DragState {
         case inactive
@@ -80,13 +84,16 @@ struct CardView: View {
         .updating($dragState) { (value, dragInfo, _) in
             dragInfo = .active(translation: value.translation)
         }
-//        .onEnded {_ in
-//        }
+        .onEnded {_ in
+//            self.index += 1.0
+            self.randomDegrees = Double.random(in: -36...36)
+        }
         
         return ZStack {
             Spacer()
                 .background(color)
-                .modifier(Shaders())
+                .cornerRadius(16)
+                .shadow(color: Color.black.opacity(0.25), radius: 16)
             if content == "Circle" {
                 Circle()
                     .foregroundColor(Color.white)
@@ -106,8 +113,9 @@ struct CardView: View {
         }
         .frame(width: 264, height: 400, alignment: .center)
         .zIndex(index)
-        .rotationEffect(Angle.init(degrees: index == 2.0 ? 0.0 : Double.random(in: -18...18)))
+        .rotationEffect(Angle.init(degrees: index == 2.0 ? 0.0 : randomDegrees))
         .scaleEffect(dragState.isActive ? 1.1 : 1.0)
+//        .gesture(index == 2.0 ? gesture : nil)
         .gesture(gesture)
         .offset(
             x: viewState.width + dragState.translation.width * 0.8,
@@ -134,14 +142,6 @@ struct Triangle: View {
                 ])
             }
         }
-    }
-}
-
-struct Shaders: ViewModifier {
-    func body(content: Content) -> some View {
-        content
-            .cornerRadius(16)
-            .shadow(color: Color.black.opacity(0.25), radius: 16)
     }
 }
 
