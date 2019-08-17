@@ -14,8 +14,8 @@ struct ContentView: View {
     var body: some View {
         ZStack {
             Rectangle()
-            .foregroundColor(Color(red: 244/255, green: 247/255, blue: 250/255, opacity: 1.0))
-            .edgesIgnoringSafeArea(.all)
+                .foregroundColor(Color.black)
+                .edgesIgnoringSafeArea(.all)
             VStack {
                 Spacer()
                 ZStack {
@@ -60,8 +60,8 @@ struct ContentView: View {
                     self.scaleInOut.toggle()
                 }
                 Spacer()
-                Text("a little work with 🌬")
-                    .foregroundColor(Color.black.opacity(0.5))
+                Text("a little work with 🍀")
+                    .foregroundColor(Color.white.opacity(0.5))
                     .font(.system(size: 17, weight: .regular))
                     .italic()
                     .padding(.top, 16)
