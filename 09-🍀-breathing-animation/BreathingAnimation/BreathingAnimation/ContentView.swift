@@ -70,7 +70,7 @@ struct ContentView: View {
                 }
                 Spacer()
                 Text("a little work with 🍀")
-                    .foregroundColor(Color.white.opacity(0.5))
+                    .foregroundColor(Color.white.opacity(0.75))
                     .font(.system(size: 17, weight: .regular))
                     .italic()
                     .padding(.top, 16)
