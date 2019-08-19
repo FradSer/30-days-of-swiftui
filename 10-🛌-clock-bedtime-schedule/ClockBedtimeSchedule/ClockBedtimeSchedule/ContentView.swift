@@ -12,6 +12,8 @@ let startColor: Color = Color(red:1.00, green:0.63, blue:0.05)
 let endColor: Color = Color(red:1.00, green:0.83, blue:0.03)
 
 struct ContentView: View {
+    @State var totalDegress: Double = 100
+    
     var body: some View {
         ZStack {
             Rectangle()
@@ -21,26 +23,35 @@ struct ContentView: View {
                 Spacer()
                 ZStack {
                     Circle()
-                        .stroke(Color.white.opacity(0.25), lineWidth: 40)
+                        .stroke(Color.white.opacity(0.2), lineWidth: 40)
                         .frame(width: 314, height: 314)
                     ZStack {
                         Circle()
-                            .trim(from: 0.25, to: 1.0)
+                            .trim(from: 0, to: 0.25)
                             .stroke(
-                                AngularGradient(gradient: Gradient(colors: [startColor, endColor]), center: .center, startAngle: .degrees(0), endAngle: .degrees(-270)),
+                                AngularGradient(gradient: Gradient(colors: [startColor, endColor]), center: .center, startAngle: .degrees(0), endAngle: .degrees(45)),
                                 style: StrokeStyle(lineWidth: 40, lineCap: .round))
                             .frame(width: 314, height: 314)
-                        Circle()
-                            .foregroundColor(Color.black)
-                            .frame(width: 34, height: 34, alignment: .center)
-                            .offset(x: 157)
-                        Circle()
-                            .foregroundColor(Color.black)
-                            .frame(width: 34, height: 34, alignment: .center)
-                            .offset(y: 157)
+                        Group {
+                            ZStack {
+                                Circle()
+                                    .foregroundColor(Color.black)
+                                Image(systemName: "zzz")
+                                    .font(.system(size: 20))
+                                    .foregroundColor(startColor).rotationEffect(.degrees(-totalDegress))
+                            }.offset(x: 157)
+                            ZStack {
+                                Circle()
+                                    .foregroundColor(Color.black)
+                                Image(systemName: "bell.fill")
+                                    .font(.system(size: 20))
+                                    .foregroundColor(endColor).rotationEffect(.degrees(-totalDegress))
+                            }.offset(y: 157)
+                        }
+                        .frame(width: 38, height: 38, alignment: .center)
                     }
                 }
-                .rotationEffect(.degrees(90))
+                .rotationEffect(.degrees(totalDegress))
                 Spacer()
                 Text("a little work with 🛌")
                     .foregroundColor(Color.white.opacity(0.75))
