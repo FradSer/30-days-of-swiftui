@@ -60,6 +60,12 @@
 
 ![](./docs/assets/images/09.gif)
 
+### [C10 - 🛌 Clock Bedtime Schedule](./10-🛌-clock-bedtime-schedule)
+
+![](https://img.shields.io/badge/Xcode-11.0%20beta%206-%231575F9) ![](https://img.shields.io/badge/Swift-5.1-%23FA7343)
+
+![](./docs/assets/images/10.gif)
+
 ## Authors
 
 * **Frad Lee** - *Initial work* - [@FradSer](https://twitter.com/fradser)
