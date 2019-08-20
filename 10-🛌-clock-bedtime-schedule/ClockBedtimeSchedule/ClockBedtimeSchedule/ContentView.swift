@@ -13,35 +13,35 @@ let endColor: Color = Color(red:1.00, green:0.83, blue:0.03)
 
 struct ContentView: View {
     
-    @State var totalViewState: CGPoint = CGPoint(x: 157, y: 314)
-    @State var sleepViewState: CGPoint = CGPoint(x: 157, y: 314)
-    @State var wakeupViewState: CGPoint = CGPoint(x: 314, y: 157)
+    @State var totalLocation: CGPoint
+    @State var totalStartLocation: CGPoint
+    @State var sleepLocation: CGPoint
+    @State var sleepStartLocation: CGPoint
+    @State var wakeupLocation: CGPoint
+    @State var wakeupStartLocation: CGPoint
     
     var body: some View {
         var isFix: Bool = false
-        if getAngles(end: sleepViewState) > getAngles(end: wakeupViewState) {
+        if getSleepWakeupAngles(start: sleepStartLocation, end: sleepLocation) > getSleepWakeupAngles(start: wakeupStartLocation, end: wakeupLocation) {
             isFix = true
         }
         
         let totalDragGesture = DragGesture()
             .onChanged {
-                self.totalViewState = $0.location
-//                print("\(self.totalViewState)")
-                
+            self.totalStartLocation = $0.startLocation
+            self.totalLocation = $0.location
         }
         
         let sleepDragGesture = DragGesture()
            .onChanged {
-            self.sleepViewState = CGPoint(x: $0.location.x + 157, y: $0.location.y)
-               print("\(self.sleepViewState)")
-               
+            self.sleepStartLocation = $0.startLocation
+            self.sleepLocation = $0.location
        }
         
         let wakeupDragGesture = DragGesture()
            .onChanged {
-               self.wakeupViewState = CGPoint(x: $0.location.x + 157, y: $0.location.y)
-//               print("\(self.wakeupViewState)")
-               
+            self.wakeupStartLocation = $0.startLocation
+            self.wakeupLocation = $0.location
        }
         
         return ZStack {
@@ -56,37 +56,51 @@ struct ContentView: View {
                         .frame(width: 314, height: 314)
                     ZStack {
                         Circle()
-                            .trim(from: CGFloat((isFix ? getAngles(end: wakeupViewState) : getAngles(end: sleepViewState)) / 360.0), to: CGFloat((isFix ? getAngles(end: sleepViewState) : getAngles(end: wakeupViewState))  / 360.0))
+                            .trim(
+                                from: CGFloat((isFix ? getSleepWakeupAngles(start: wakeupStartLocation, end: wakeupLocation) : getSleepWakeupAngles(start: sleepStartLocation, end: sleepLocation)) / 360.0),
+                                to: CGFloat((isFix ? getSleepWakeupAngles(start: sleepStartLocation, end: sleepLocation) : getSleepWakeupAngles(start: wakeupStartLocation, end: wakeupLocation)) / 360.0)
+                            )
                             .stroke(
-                                AngularGradient(gradient: Gradient(colors: isFix ? [endColor, startColor] : [startColor, endColor]), center: .center, startAngle: .degrees(isFix ? getAngles(end: wakeupViewState) : getAngles(end: sleepViewState)), endAngle: .degrees(isFix ? getAngles(end: sleepViewState) : getAngles(end: wakeupViewState))),
-                                style: StrokeStyle(lineWidth: 40, lineCap: .round))
+                                AngularGradient(
+                                    gradient: Gradient(colors: isFix ? [endColor, startColor] : [startColor, endColor]),
+                                    center: .center,
+                                    startAngle: .degrees(isFix ? getSleepWakeupAngles(start: wakeupStartLocation, end: wakeupLocation) : getSleepWakeupAngles(start: sleepStartLocation, end: sleepLocation)),
+                                    endAngle: .degrees(isFix ? getSleepWakeupAngles(start: sleepStartLocation, end: sleepLocation) : getSleepWakeupAngles(start: wakeupStartLocation, end: wakeupLocation))
+                                ),
+                                style: StrokeStyle(lineWidth: 40, lineCap: .round)
+                            )
                         ZStack {
+                            
+                            // BELL
                             ZStack {
                                 Circle()
                                     .foregroundColor(Color.black)
                                 Image(systemName: "bell.fill")
                                     .font(.system(size: 20))
-                                    .foregroundColor(endColor).rotationEffect(.degrees(-getAngles(end: totalViewState)-getAngles(end: wakeupViewState)))
+                                    .foregroundColor(endColor).rotationEffect(.degrees(-getTotalAngles(start: totalStartLocation, end: totalLocation)-getSleepWakeupAngles(start: wakeupStartLocation, end: wakeupLocation)))
                             }
                             .offset(x: 157)
-                            .rotationEffect(.degrees(getAngles(end: wakeupViewState)))
+                            .rotationEffect(.degrees(getSleepWakeupAngles(start: wakeupStartLocation, end: wakeupLocation)))
                             .gesture(wakeupDragGesture)
+                            
+                            // ZZZ
                             ZStack {
                                 Circle()
                                     .foregroundColor(Color.black)
                                 Image(systemName: "zzz")
                                     .font(.system(size: 20))
-                                    .foregroundColor(startColor).rotationEffect(.degrees(-getAngles(end: totalViewState)-getAngles(end: sleepViewState)))
+                                    .foregroundColor(startColor).rotationEffect(.degrees(-getTotalAngles(start: totalStartLocation, end: totalLocation)-getSleepWakeupAngles(start: sleepStartLocation, end: sleepLocation)))
                             }
                             .offset(x: 157)
-                            .rotationEffect(.degrees(getAngles(end: sleepViewState)))
+                            .rotationEffect(.degrees(getSleepWakeupAngles(start: sleepStartLocation, end: sleepLocation)))
                             .gesture(sleepDragGesture)
+                            
                         }
                         .frame(width: 36, height: 36, alignment: .center)
                     }
                     .frame(width: 314, height: 314)
                 }
-                .rotationEffect(.degrees(getAngles(end: totalViewState)))
+                .rotationEffect(.degrees(getTotalAngles(start: totalStartLocation, end: totalLocation)))
                 .gesture(totalDragGesture)
                 Spacer()
                 Text("a little work with 🛌")
@@ -100,9 +114,23 @@ struct ContentView: View {
     }
 }
 
-func getAngles(end: CGPoint) -> Double {
-    let start = CGPoint(x:314, y:157)
+func getTotalAngles(start: CGPoint, end: CGPoint) -> Double {
     let middle = CGPoint(x: 157, y: 157)
+    
+    let startX = start.x - middle.x
+    let startY = start.y - middle.y
+    let atanStart = atan2(startX, startY)
+    
+    let endX = end.x - middle.x
+    let endY = end.y - middle.y
+    let atanEnd = atan2(endX, endY)
+    
+    let angel = Double(atanStart - atanEnd) * 180 / Double.pi
+    return angel
+}
+
+func getSleepWakeupAngles(start: CGPoint, end: CGPoint) -> Double {
+    let middle = CGPoint(x: 0, y: 0)
     
     let startX = start.x - middle.x
     let startY = start.y - middle.y
@@ -119,7 +147,7 @@ func getAngles(end: CGPoint) -> Double {
 #if DEBUG
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(totalLocation: .zero, totalStartLocation: .zero, sleepLocation: .zero, sleepStartLocation: .zero, wakeupLocation: .zero, wakeupStartLocation: .zero)
     }
 }
 #endif
