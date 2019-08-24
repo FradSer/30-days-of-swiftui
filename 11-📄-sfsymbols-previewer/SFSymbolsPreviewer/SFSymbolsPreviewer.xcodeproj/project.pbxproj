@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,7 @@
 		CB0C4E86230EF5FC00EFA2E2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB0C4E85230EF5FC00EFA2E2 /* Preview Assets.xcassets */; };
 		CB0C4E89230EF5FC00EFA2E2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB0C4E87230EF5FC00EFA2E2 /* LaunchScreen.storyboard */; };
 		CB0C4E91230EF62300EFA2E2 /* Symbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0C4E90230EF62300EFA2E2 /* Symbols.swift */; };
+		CB68F30B23119F5800EC0F57 /* GridStack in Frameworks */ = {isa = PBXBuildFile; productRef = CB68F30A23119F5800EC0F57 /* GridStack */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB68F30B23119F5800EC0F57 /* GridStack in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +96,9 @@
 			dependencies = (
 			);
 			name = SFSymbolsPreviewer;
+			packageProductDependencies = (
+				CB68F30A23119F5800EC0F57 /* GridStack */,
+			);
 			productName = SFSymbolsPreviewer;
 			productReference = CB0C4E79230EF5FA00EFA2E2 /* SFSymbolsPreviewer.app */;
 			productType = "com.apple.product-type.application";
@@ -122,6 +127,9 @@
 				Base,
 			);
 			mainGroup = CB0C4E70230EF5FA00EFA2E2;
+			packageReferences = (
+				CB68F30923119F5800EC0F57 /* XCRemoteSwiftPackageReference "GridStack" */,
+			);
 			productRefGroup = CB0C4E7A230EF5FA00EFA2E2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -346,6 +354,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CB68F30923119F5800EC0F57 /* XCRemoteSwiftPackageReference "GridStack" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pietropizzi/GridStack";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CB68F30A23119F5800EC0F57 /* GridStack */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB68F30923119F5800EC0F57 /* XCRemoteSwiftPackageReference "GridStack" */;
+			productName = GridStack;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CB0C4E71230EF5FA00EFA2E2 /* Project object */;
 }
