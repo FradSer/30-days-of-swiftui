@@ -1,0 +1,94 @@
+<svg width="3300" height="2200" viewBox="0 0 3300 2200" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="3300" height="2200" fill="#E5E5E5"/>
+<g id="Tempale">
+<g id="Notes">
+<path id="artboard" d="M3300 0H0V2200H3300V0Z" fill="white"/>
+<path id="Vector" d="M263 292H3036" stroke="black" stroke-width="0.5"/>
+<text id="Weight/Scale Variations" fill="black" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="12" font-weight="bold" letter-spacing="0em"><tspan x="263" y="321.102">Weight/Scale Variations</tspan></text>
+<text id="Ultralight" fill="black" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="12" letter-spacing="0em"><tspan x="535.664" y="321.102">Ultralight</tspan></text>
+<text id="Thin" fill="black" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="12" letter-spacing="0em"><tspan x="844.768" y="321.102">Thin</tspan></text>
+<text id="Light" fill="black" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="12" letter-spacing="0em"><tspan x="1139.81" y="321.102">Light</tspan></text>
+<text id="Regular" fill="black" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="12" letter-spacing="0em"><tspan x="1429.53" y="321.102">Regular</tspan></text>
+<text id="Medium" fill="black" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="12" letter-spacing="0em"><tspan x="1724.72" y="321.102">Medium</tspan></text>
+<text id="Semibold" fill="black" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="12" letter-spacing="0em"><tspan x="2018.17" y="321.102">Semibold</tspan></text>
+<text id="Bold" fill="black" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="12" letter-spacing="0em"><tspan x="2327.97" y="321.102">Bold</tspan></text>
+<text id="Heavy" fill="black" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="12" letter-spacing="0em"><tspan x="2620.27" y="321.102">Heavy</tspan></text>
+<text id="Black" fill="black" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="12" letter-spacing="0em"><tspan x="2918.76" y="321.102">Black</tspan></text>
+<path id="Vector_2" d="M263 1903H3036" stroke="black" stroke-width="0.5"/>
+<g id="Group">
+<path id="Vector_3" d="M272.248 1933.83C276.555 1933.83 280.139 1930.26 280.139 1925.95C280.139 1921.64 276.545 1918.07 272.238 1918.07C267.941 1918.07 264.367 1921.64 264.367 1925.95C264.367 1930.26 267.951 1933.83 272.248 1933.83ZM272.248 1932.35C268.703 1932.35 265.871 1929.5 265.871 1925.95C265.871 1922.39 268.693 1919.55 272.238 1919.55C275.793 1919.55 278.635 1922.39 278.644 1925.95C278.654 1929.5 275.803 1932.35 272.248 1932.35ZM272.229 1929.57C272.697 1929.57 272.971 1929.26 272.971 1928.74V1926.68H275.197C275.695 1926.68 276.037 1926.43 276.037 1925.96C276.037 1925.48 275.715 1925.22 275.197 1925.22H272.971V1922.99C272.971 1922.47 272.697 1922.15 272.229 1922.15C271.76 1922.15 271.506 1922.49 271.506 1922.99V1925.22H269.299C268.781 1925.22 268.449 1925.48 268.449 1925.96C268.449 1926.43 268.801 1926.68 269.299 1926.68H271.506V1928.74C271.506 1929.24 271.76 1929.57 272.229 1929.57Z" fill="black"/>
+</g>
+<g id="Group_2">
+<path id="Vector_4" d="M293.215 1935.91C298.655 1935.91 303.176 1931.4 303.176 1925.95C303.176 1920.51 298.645 1915.99 293.205 1915.99C287.756 1915.99 283.254 1920.51 283.254 1925.95C283.254 1931.4 287.766 1935.91 293.215 1935.91ZM293.215 1934.25C288.606 1934.25 284.924 1930.56 284.924 1925.95C284.924 1921.35 288.596 1917.65 293.205 1917.65C297.805 1917.65 301.506 1921.35 301.516 1925.95C301.526 1930.56 297.815 1934.25 293.215 1934.25ZM293.186 1930.59C293.713 1930.59 294.026 1930.23 294.026 1929.66V1926.77H297.082C297.629 1926.77 298.01 1926.49 298.01 1925.97C298.01 1925.44 297.649 1925.14 297.082 1925.14H294.026V1922.07C294.026 1921.5 293.713 1921.14 293.186 1921.14C292.668 1921.14 292.385 1921.52 292.385 1922.07V1925.14H289.338C288.762 1925.14 288.401 1925.44 288.401 1925.97C288.401 1926.49 288.791 1926.77 289.338 1926.77H292.385V1929.66C292.385 1930.21 292.668 1930.59 293.186 1930.59Z" fill="black"/>
+</g>
+<g id="Group_3">
+<path id="Vector_5" d="M319.885 1938.67C326.848 1938.67 332.6 1932.92 332.6 1925.96C332.6 1919 326.838 1913.24 319.875 1913.24C312.912 1913.24 307.17 1919 307.17 1925.96C307.17 1932.92 312.922 1938.67 319.885 1938.67ZM319.885 1936.86C313.84 1936.86 308.996 1931.99 308.996 1925.96C308.996 1919.92 313.83 1915.06 319.875 1915.06C325.91 1915.06 330.773 1919.92 330.783 1925.96C330.793 1931.99 325.92 1936.86 319.885 1936.86ZM319.855 1931.94C320.432 1931.94 320.773 1931.54 320.773 1930.94V1926.87H325.012C325.607 1926.87 326.027 1926.54 326.027 1925.98C326.027 1925.4 325.637 1925.06 325.012 1925.06H320.773V1920.81C320.773 1920.2 320.432 1919.81 319.855 1919.81C319.299 1919.81 318.977 1920.22 318.977 1920.81V1925.06H314.738C314.123 1925.06 313.723 1925.4 313.723 1925.98C313.723 1926.54 314.152 1926.87 314.738 1926.87H318.977V1930.94C318.977 1931.53 319.299 1931.94 319.855 1931.94Z" fill="black"/>
+</g>
+<text id="Design Variations" fill="black" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="12" font-weight="bold" letter-spacing="0em"><tspan x="263" y="1952.1">Design Variations</tspan></text>
+<text id="Symbols are supported in up to nine weights and three scales." fill="black" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="12" letter-spacing="0em"><tspan x="263" y="1970.1">Symbols are supported in up to nine weights and three scales.</tspan></text>
+<text id="For optimal layout with text and other symbols, vertically align" fill="black" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="12" letter-spacing="0em"><tspan x="263" y="1988.1">For optimal layout with text and other symbols, vertically align</tspan></text>
+<text id="symbols with the adjacent text." fill="black" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="12" letter-spacing="0em"><tspan x="263" y="2006.1">symbols with the adjacent text.</tspan></text>
+<path id="Vector_6" opacity="0.4" d="M779 1919H776V1933H779V1919Z" fill="#00AEEF"/>
+<g id="Group_4">
+<path id="Vector_7" d="M789.527 1933H791.373L786.178 1918.91H784.439L779.244 1933H781.09L782.506 1928.97H788.111L789.527 1933ZM785.279 1921.05H785.338L787.594 1927.47H783.023L785.279 1921.05Z" fill="black"/>
+</g>
+<path id="Vector_8" opacity="0.4" d="M794.617 1919H791.617V1933H794.617V1919Z" fill="#00AEEF"/>
+<text id="Margins" fill="black" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="12" font-weight="bold" letter-spacing="0em"><tspan x="776" y="1952.1">Margins</tspan></text>
+<text id="Leading and trailing margins on the left and right side of each symbol" fill="black" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="12" letter-spacing="0em"><tspan x="776" y="1970.1">Leading and trailing margins on the left and right side of each symbol</tspan></text>
+<text id="can be adjusted by modifying the width of the blue rectangles." fill="black" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="12" letter-spacing="0em"><tspan x="776" y="1988.1">can be adjusted by modifying the width of the blue rectangles.</tspan></text>
+<text id="Modifications are automatically applied proportionally to all" fill="black" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="12" letter-spacing="0em"><tspan x="776" y="2006.1">Modifications are automatically applied proportionally to all</tspan></text>
+<text id="scales and weights." fill="black" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="12" letter-spacing="0em"><tspan x="776" y="2024.1">scales and weights.</tspan></text>
+<g id="Group_5">
+<path id="Vector_9" d="M1291.83 1936.61L1293.38 1938.16C1294.22 1938.99 1295.19 1938.92 1296.05 1937.97L1306.28 1926.84C1306.7 1927.13 1307.09 1927.12 1307.56 1927.02L1308.61 1926.81L1309.3 1927.5L1309.25 1928.02C1309.19 1928.56 1309.34 1928.97 1309.84 1929.46L1310.66 1930.28C1311.16 1930.78 1311.82 1930.81 1312.3 1930.33L1315.55 1927.08C1316.03 1926.6 1316 1925.95 1315.5 1925.44L1314.68 1924.62C1314.19 1924.12 1313.77 1923.95 1313.24 1924.03L1312.71 1924.08L1312.05 1923.42L1312.34 1922.28C1312.48 1921.71 1312.33 1921.25 1311.71 1920.65L1309.3 1918.24C1305.76 1914.72 1301.22 1914.83 1298.11 1917.96C1297.68 1918.39 1297.64 1918.98 1297.92 1919.41C1298.14 1919.78 1298.62 1920 1299.27 1919.84C1300.79 1919.46 1302.3 1919.57 1303.79 1920.58L1303.16 1922.16C1302.93 1922.75 1302.95 1923.22 1303.18 1923.66L1292.02 1933.94C1291.08 1934.81 1290.97 1935.75 1291.83 1936.61ZM1299.66 1918.35C1302.33 1916.36 1305.65 1916.68 1308.05 1919.08L1310.68 1921.69C1310.91 1921.93 1310.94 1922.11 1310.88 1922.4L1310.5 1923.97L1312.08 1925.54L1313.03 1925.45C1313.32 1925.42 1313.4 1925.44 1313.64 1925.67L1314.25 1926.29L1311.51 1929.04L1310.88 1928.42C1310.66 1928.2 1310.64 1928.11 1310.67 1927.82L1310.76 1926.86L1309.2 1925.29L1307.57 1925.61C1307.29 1925.67 1307.14 1925.67 1306.9 1925.42L1304.73 1923.24C1304.5 1923.01 1304.47 1922.87 1304.6 1922.56L1305.55 1920.28C1303.95 1918.74 1301.83 1917.89 1299.79 1918.55C1299.7 1918.58 1299.64 1918.56 1299.62 1918.52C1299.59 1918.47 1299.59 1918.42 1299.66 1918.35ZM1293.1 1935.91C1292.6 1935.41 1292.78 1935.11 1293.11 1934.81L1304.08 1924.69L1305.3 1925.92L1295.15 1936.85C1294.85 1937.18 1294.47 1937.28 1294.06 1936.88L1293.1 1935.91Z" fill="black"/>
+</g>
+<text id="Exporting" fill="black" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="12" font-weight="bold" letter-spacing="0em"><tspan x="1289" y="1952.1">Exporting</tspan></text>
+<text id="Symbols should be outlined when exporting to ensure the" fill="black" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="12" letter-spacing="0em"><tspan x="1289" y="1970.1">Symbols should be outlined when exporting to ensure the</tspan></text>
+<text id="design is preserved when submitting to Xcode." fill="black" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="12" letter-spacing="0em"><tspan x="1289" y="1988.1">design is preserved when submitting to Xcode.</tspan></text>
+<text id="Template v.1.0" fill="black" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="12" letter-spacing="0em"><tspan x="2958.11" y="1932.1">Template v.1.0</tspan></text>
+<text id="Generated from heart" fill="black" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="12" letter-spacing="0em"><tspan x="2921.82" y="1950.1">Generated from heart</tspan></text>
+<text id="Typeset at 100 points" fill="black" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="12" letter-spacing="0em"><tspan x="2921.17" y="1968.1">Typeset at 100 points</tspan></text>
+<text id="Small" fill="black" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="12" letter-spacing="0em"><tspan x="263" y="725.102">Small</tspan></text>
+<text id="Medium_2" fill="black" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="12" letter-spacing="0em"><tspan x="263" y="1155.1">Medium</tspan></text>
+<text id="Large" fill="black" xml:space="preserve" style="white-space: pre" font-family="Roboto" font-size="12" letter-spacing="0em"><tspan x="263" y="1585.1">Large</tspan></text>
+</g>
+<g id="Symbols">
+<g id="Regular-L">
+<g id="Icon">
+<rect id="Rectangle" x="1385.9" y="1467.93" width="129" height="20.64" rx="8" fill="black"/>
+<rect id="Rectangle_2" x="1385.9" y="1558.23" width="78.69" height="20.64" rx="8" fill="black"/>
+</g>
+</g>
+<g id="Regular-M">
+<g id="Icon_2">
+<rect id="Rectangle_3" x="1399.7" y="1047" width="100" height="16" rx="8" fill="black"/>
+<rect id="Rectangle_4" x="1399.7" y="1117" width="61" height="16" rx="8" fill="black"/>
+</g>
+</g>
+<g id="Regular-S">
+<g id="Icon_3">
+<rect id="Rectangle_5" x="1410.83" y="628.311" width="78.3" height="12.528" rx="6.264" fill="black"/>
+<rect id="Rectangle_6" x="1410.83" y="683.121" width="47.763" height="12.528" rx="6.264" fill="black"/>
+</g>
+</g>
+</g>
+<g id="Guides">
+<g id="H-reference">
+<path id="Vector_10" d="M393.932 696H396.666L369.566 625.541H367.076L339.977 696H342.662L351.94 671.537H384.703L393.932 696ZM368.199 628.91H368.443L383.824 669.291H352.818L368.199 628.91Z" fill="#27AAE1"/>
+</g>
+<path id="Baseline-S" d="M263 696H3036" stroke="#27AAE1" stroke-width="0.577"/>
+<path id="Capline-S" d="M263 625.541H3036" stroke="#27AAE1" stroke-width="0.577"/>
+<g id="H-reference_2">
+<path id="Vector_11" d="M393.932 1126H396.666L369.566 1055.54H367.076L339.977 1126H342.662L351.94 1101.54H384.703L393.932 1126ZM368.199 1058.91H368.443L383.824 1099.29H352.818L368.199 1058.91Z" fill="#27AAE1"/>
+</g>
+<path id="Baseline-M" d="M263 1126H3036" stroke="#27AAE1" stroke-width="0.577"/>
+<path id="Capline-M" d="M263 1055.54H3036" stroke="#27AAE1" stroke-width="0.577"/>
+<g id="H-reference_3">
+<path id="Vector_12" d="M393.932 1556H396.666L369.566 1485.54H367.076L339.977 1556H342.662L351.94 1531.54H384.703L393.932 1556ZM368.199 1488.91H368.443L383.824 1529.29H352.818L368.199 1488.91Z" fill="#27AAE1"/>
+</g>
+<path id="Baseline-L" d="M263 1556H3036" stroke="#27AAE1" stroke-width="0.577"/>
+<path id="Capline-L" d="M263 1485.54H3036" stroke="#27AAE1" stroke-width="0.577"/>
+<path id="left-margin" opacity="0.4" d="M1401.36 1030.79H1392.62V1150.13H1401.36V1030.79Z" fill="#00AEEF"/>
+<path id="right-margin" opacity="0.4" d="M1507.07 1030.79H1498.33V1150.13H1507.07V1030.79Z" fill="#00AEEF"/>
+</g>
+</g>
+</svg>
