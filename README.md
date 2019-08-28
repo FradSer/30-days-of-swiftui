@@ -72,6 +72,12 @@
 
 ![](./docs/assets/images/11.gif)
 
+### [C12 - 🚕 Side Menu Interaction](./12-🚕-side-menu-interaction)
+
+![](https://img.shields.io/badge/Xcode-11.0%20beta%206-%231575F9) ![](https://img.shields.io/badge/Swift-5.1-%23FA7343)
+
+![](./docs/assets/images/12.gif)
+
 ## Authors
 
 * **Frad Lee** - *Initial work* - [@FradSer](https://twitter.com/fradser)
