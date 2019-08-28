@@ -13,6 +13,7 @@
 		CB68F31F23161C2D00EC0F57 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB68F31E23161C2D00EC0F57 /* Assets.xcassets */; };
 		CB68F32223161C2D00EC0F57 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB68F32123161C2D00EC0F57 /* Preview Assets.xcassets */; };
 		CB68F32523161C2D00EC0F57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB68F32323161C2D00EC0F57 /* LaunchScreen.storyboard */; };
+		CB68F32D2316E62300EC0F57 /* CustomSymbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB68F32C2316E62300EC0F57 /* CustomSymbols.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		CB68F32123161C2D00EC0F57 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		CB68F32423161C2D00EC0F57 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB68F32623161C2D00EC0F57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB68F32C2316E62300EC0F57 /* CustomSymbols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSymbols.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				CB68F31823161C2C00EC0F57 /* AppDelegate.swift */,
+				CB68F32C2316E62300EC0F57 /* CustomSymbols.swift */,
 				CB68F31A23161C2C00EC0F57 /* SceneDelegate.swift */,
 				CB68F31C23161C2C00EC0F57 /* ContentView.swift */,
 				CB68F31E23161C2D00EC0F57 /* Assets.xcassets */,
@@ -148,6 +151,7 @@
 			files = (
 				CB68F31923161C2C00EC0F57 /* AppDelegate.swift in Sources */,
 				CB68F31B23161C2C00EC0F57 /* SceneDelegate.swift in Sources */,
+				CB68F32D2316E62300EC0F57 /* CustomSymbols.swift in Sources */,
 				CB68F31D23161C2C00EC0F57 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
