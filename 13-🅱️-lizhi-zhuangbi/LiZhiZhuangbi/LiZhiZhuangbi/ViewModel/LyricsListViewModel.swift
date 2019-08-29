@@ -12,11 +12,11 @@ import Combine
 
 public class LyricsListViewModel: ObservableObject {
     
-    public let willChange = PassthroughSubject<LyricsListViewModel, Never>()
+    public let willChange = ObservableObjectPublisher()
     
-    var lyricsList = [Lyrics]() {
-        didSet {
-            willChange.send(self)
+    @Published var lyricsList = [Lyrics]() {
+        willSet {
+            self.objectWillChange.send()
         }
     }
     
@@ -33,6 +33,7 @@ public class LyricsListViewModel: ObservableObject {
                 let lyricsList = try JSONDecoder().decode([Lyrics].self, from: data)
                 DispatchQueue.main.async {
                     self.lyricsList = lyricsList
+                    print(lyricsList)
                 }
             } catch {
                 print("Failed To decode: ", error)
@@ -40,4 +41,7 @@ public class LyricsListViewModel: ObservableObject {
         }.resume()
     }
     
+    init() {
+        load()
+    }
 }
