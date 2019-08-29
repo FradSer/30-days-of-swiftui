@@ -15,9 +15,9 @@ struct ContentView: View {
         return VStack {
 //            WebView(request: URLRequest(url: URL(string: "https://www.youtube.com/embed/Xys5wvaDUnQ?autoplay=1&modestbranding=0&autohide=1&title=1&controls=0")!))
 //                .frame(height: 300, alignment: .center)
-            List(0 ..< lyricsLisViewModel.lyricsList.count) { lyrics in
+            List(lyricsLisViewModel.lyricsList) { lyrics in
                 HStack {
-                    Text(String(lyrics))
+                    Text(lyrics.lyrics)
                 }
             }
         }
