@@ -19,4 +19,7 @@ public class LyricsCellViewModel {
         return self.lyrics.lyrics
     }
     
+    func getTitle() -> String {
+        return self.lyrics.title
+    }
 }

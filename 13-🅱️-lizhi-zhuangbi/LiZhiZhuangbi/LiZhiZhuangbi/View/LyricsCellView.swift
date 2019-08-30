@@ -9,12 +9,25 @@
 import SwiftUI
 import Combine
 
+let zhuangbiRed: Color = Color(red: 239/55, green: 40/255, blue: 24/255)
+
 struct LyricsCellView: View {
     var lyrics: Lyrics
     
     var body: some View {
-        HStack {
+        ZStack {
+            VStack {
+                Spacer()
+                HStack {
+                    Spacer()
+                    Text("——《" + LyricsCellViewModel(lyrics: lyrics).getTitle() + "》")
+                        .font(Font.custom("SourceHanSerifSC-Heavy", size: 32)).foregroundColor(zhuangbiRed).padding()
+                }
+            }
             Text(LyricsCellViewModel(lyrics: lyrics).getLyrics())
+                .font(Font.custom("SourceHanSerifSC-Heavy", size: 40))
+                .multilineTextAlignment(.center)
+                .padding()
         }
     }
 }

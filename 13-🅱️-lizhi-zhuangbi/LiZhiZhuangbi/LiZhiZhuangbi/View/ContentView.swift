@@ -21,28 +21,46 @@ struct ContentView: View {
             Rectangle()
                 .foregroundColor(backgroundColor)
                 .edgesIgnoringSafeArea(.all)
-            VStack {
-                List(lyricsLisViewModel.lyricsList.shuffled()) { lyrics in
-                    HStack {
-                        Text(lyrics.lyrics)
-                        Text(lyrics.title)
-                    }
+            ZStack {
+//                List(lyricsLisViewModel.lyricsList.shuffled()) { lyrics in
+//                    HStack {
+//                        Text(lyrics.lyrics)
+//                        Text(lyrics.title)
+//                    }
+//                }
+                VStack {
+                    LyricsCellView(lyrics: lyricsLisViewModel.lyricsList.shuffled().first ?? defaultLyrics)
+                        .padding(.top, 98)
+                    Spacer()
                 }
-                Button(action: {
-                    self.lyricsLisViewModel.shuffle()
-                }) {
-                Text(/*@START_MENU_TOKEN@*/"Button"/*@END_MENU_TOKEN@*/)
+                VStack {
+                    Spacer()
+                    Button(action: {
+                        self.lyricsLisViewModel.shuffle()
+                    }) {
+                        ZStack {
+                            Circle()
+                                .frame(width: 200, height: 200, alignment: .center)
+                                .foregroundColor(Color.black).shadow(radius: 32)
+                            Group{
+                                Text("Zhuang").font(.system(size: 56, weight: .regular, design: .serif)).offset(y: -19).opacity(0.7)
+                                Text("Bi").font(.system(size: 72, weight: .bold, design: .serif)).offset(x: 40, y: 17).opacity(0.9)
+                            }.foregroundColor(Color.white)
+                        }
+                    }.padding()
+                    Text("a little work with 🅱️")
+                        .foregroundColor(Color.black.opacity(0.5))
+                        .font(.system(size: 17, weight: .regular))
+                        .italic()
+                        .padding(.top, 16)
+                        .padding(.bottom, 16)
                 }
-                Spacer()
-                Spacer()
-                LyricsCellView(lyrics: lyricsLisViewModel.lyricsList.shuffled().first ?? defaultLyrics)
             }
-        }
+        }.animation(.easeInOut)
         
     }
     
 }
-
 
 //            WebView(request: URLRequest(url: URL(string: "https://www.youtube.com/embed/Xys5wvaDUnQ?autoplay=1&modestbranding=0&autohide=1&title=1&controls=0")!))
 //                .frame(height: 300, alignment: .center)

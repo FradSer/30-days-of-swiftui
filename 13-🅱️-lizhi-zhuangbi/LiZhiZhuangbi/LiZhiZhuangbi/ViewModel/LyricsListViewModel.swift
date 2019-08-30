@@ -25,7 +25,7 @@ public class LyricsListViewModel: ObservableObject {
     }
     
     func load() {
-        guard let url = URL(string: "https://api.sheety.co/46f9d7a7-634b-404d-bdde-8cada5251954") else { return }
+        guard let url = URL(string: "https://api.sheety.co/636edc52-e022-40c0-b374-9f6b309782b4") else { return }
         URLSession.shared.dataTask(with: url) { (data, response, error) in
             do {
                 
