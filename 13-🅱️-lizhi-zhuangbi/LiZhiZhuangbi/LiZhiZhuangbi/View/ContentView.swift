@@ -30,8 +30,8 @@ struct ContentView: View {
 //                }
                 VStack {
                     LyricsCellView(lyrics: lyricsLisViewModel.lyricsList.shuffled().first ?? defaultLyrics)
-                        .padding(.top, 98)
-                    Spacer()
+                        .padding(.bottom, 400)
+//                    Spacer()
                 }
                 VStack {
                     Spacer()
