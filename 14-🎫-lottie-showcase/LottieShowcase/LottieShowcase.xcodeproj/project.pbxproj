@@ -15,6 +15,7 @@
 		CBCCC5E2232018C100848C68 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBCCC5E0232018C100848C68 /* LaunchScreen.storyboard */; };
 		CBCCC5EA232018E800848C68 /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCCC5E9232018E800848C68 /* LottieView.swift */; };
 		CBCCC5EF23201BDE00848C68 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = CBCCC5EE23201BDE00848C68 /* Lottie */; };
+		CBCCC5F023201C5300848C68 /* LottieTest.json in Resources */ = {isa = PBXBuildFile; fileRef = CBCCC5EC2320194A00848C68 /* LottieTest.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -154,6 +155,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBCCC5F023201C5300848C68 /* LottieTest.json in Resources */,
 				CBCCC5E2232018C100848C68 /* LaunchScreen.storyboard in Resources */,
 				CBCCC5DF232018C100848C68 /* Preview Assets.xcassets in Resources */,
 				CBCCC5DC232018C100848C68 /* Assets.xcassets in Resources */,
