@@ -10,14 +10,13 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            LottieView(fileName: "LottieTest")
-                .frame(width: 300, height: 300)
-//            Button(action: {}) {
-//            Text(/*@START_MENU_TOKEN@*/"Button"/*@END_MENU_TOKEN@*/)
-//            }
+        ScrollView {
+            ForEach(lottieList, id: \.self) { lottie in
+                VStack(alignment: .center){
+                    LottieView(fileName: lottie).frame(height: 200)
+                }
+            }
         }
-        
     }
 }
 

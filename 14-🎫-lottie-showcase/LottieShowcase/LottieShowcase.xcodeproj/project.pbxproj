@@ -7,6 +7,73 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB34B4F923216D2A009EEE2F /* Download_Down.json in Resources */ = {isa = PBXBuildFile; fileRef = CB34B4B623216D2A009EEE2F /* Download_Down.json */; };
+		CB34B4FA23216D2A009EEE2F /* Padlock_UnlockIt.json in Resources */ = {isa = PBXBuildFile; fileRef = CB34B4B723216D2A009EEE2F /* Padlock_UnlockIt.json */; };
+		CB34B4FB23216D2A009EEE2F /* PieChart_AnimOff.json in Resources */ = {isa = PBXBuildFile; fileRef = CB34B4B823216D2A009EEE2F /* PieChart_AnimOff.json */; };
+		CB34B4FC23216D2A009EEE2F /* PriceTag_AnimOn.json in Resources */ = {isa = PBXBuildFile; fileRef = CB34B4B923216D2A009EEE2F /* PriceTag_AnimOn.json */; };
+		CB34B4FD23216D2A009EEE2F /* Home_AnimOn.json in Resources */ = {isa = PBXBuildFile; fileRef = CB34B4BA23216D2A009EEE2F /* Home_AnimOn.json */; };
+		CB34B4FE23216D2A009EEE2F /* Printer_AnimOff.json in Resources */ = {isa = PBXBuildFile; fileRef = CB34B4BB23216D2A009EEE2F /* Printer_AnimOff.json */; };
+		CB34B4FF23216D2A009EEE2F /* Text_AnimOn.json in Resources */ = {isa = PBXBuildFile; fileRef = CB34B4BC23216D2A009EEE2F /* Text_AnimOn.json */; };
+		CB34B50023216D2A009EEE2F /* Eye_Blinks.json in Resources */ = {isa = PBXBuildFile; fileRef = CB34B4BD23216D2A009EEE2F /* Eye_Blinks.json */; };
+		CB34B50123216D2A009EEE2F /* Telephone_AnimOff.json in Resources */ = {isa = PBXBuildFile; fileRef = CB34B4BE23216D2A009EEE2F /* Telephone_AnimOff.json */; };
+		CB34B50223216D2A009EEE2F /* Eye_AnimOff.json in Resources */ = {isa = PBXBuildFile; fileRef = CB34B4BF23216D2A009EEE2F /* Eye_AnimOff.json */; };
+		CB34B50323216D2A009EEE2F /* LoudMute_Loud.json in Resources */ = {isa = PBXBuildFile; fileRef = CB34B4C023216D2A009EEE2F /* LoudMute_Loud.json */; };
+		CB34B50423216D2A009EEE2F /* UsePencil_AnimOn.json in Resources */ = {isa = PBXBuildFile; fileRef = CB34B4C123216D2A009EEE2F /* UsePencil_AnimOn.json */; };
+		CB34B50523216D2A009EEE2F /* Thumbsdown_AnimOff.json in Resources */ = {isa = PBXBuildFile; fileRef = CB34B4C223216D2A009EEE2F /* Thumbsdown_AnimOff.json */; };
+		CB34B50623216D2A009EEE2F /* MagnifyingGlass_AnimOff.json in Resources */ = {isa = PBXBuildFile; fileRef = CB34B4C323216D2A009EEE2F /* MagnifyingGlass_AnimOff.json */; };
+		CB34B50723216D2A009EEE2F /* Screen_AnimOn.json in Resources */ = {isa = PBXBuildFile; fileRef = CB34B4C423216D2A009EEE2F /* Screen_AnimOn.json */; };
+		CB34B50823216D2A009EEE2F /* Alarm_AnimOff.json in Resources */ = {isa = PBXBuildFile; fileRef = CB34B4C523216D2A009EEE2F /* Alarm_AnimOff.json */; };
+		CB34B50923216D2A009EEE2F /* Minimize_AnimOn.json in Resources */ = {isa = PBXBuildFile; fileRef = CB34B4C623216D2A009EEE2F /* Minimize_AnimOn.json */; };
+		CB34B50A23216D2A009EEE2F /* Alarm_Ring.json in Resources */ = {isa = PBXBuildFile; fileRef = CB34B4C723216D2A009EEE2F /* Alarm_Ring.json */; };
+		CB34B50B23216D2A009EEE2F /* LoudMute_Mute.json in Resources */ = {isa = PBXBuildFile; fileRef = CB34B4C823216D2A009EEE2F /* LoudMute_Mute.json */; };
+		CB34B50C23216D2A009EEE2F /* Share_AnimOn.json in Resources */ = {isa = PBXBuildFile; fileRef = CB34B4C923216D2A009EEE2F /* Share_AnimOn.json */; };
+		CB34B50D23216D2A009EEE2F /* SpeechBubble_AnimOff.json in Resources */ = {isa = PBXBuildFile; fileRef = CB34B4CA23216D2A009EEE2F /* SpeechBubble_AnimOff.json */; };
+		CB34B50E23216D2A009EEE2F /* Text_AnimOff.json in Resources */ = {isa = PBXBuildFile; fileRef = CB34B4CB23216D2A009EEE2F /* Text_AnimOff.json */; };
+		CB34B50F23216D2A009EEE2F /* Printer_AnimOn.json in Resources */ = {isa = PBXBuildFile; fileRef = CB34B4CC23216D2A009EEE2F /* Printer_AnimOn.json */; };
+		CB34B51023216D2A009EEE2F /* Minimize_AnimOff.json in Resources */ = {isa = PBXBuildFile; fileRef = CB34B4CD23216D2A009EEE2F /* Minimize_AnimOff.json */; };
+		CB34B51123216D2A009EEE2F /* ShoppingCart_AnimOff.json in Resources */ = {isa = PBXBuildFile; fileRef = CB34B4CE23216D2A009EEE2F /* ShoppingCart_AnimOff.json */; };
+		CB34B51223216D2A009EEE2F /* FeverChart_AnimOff.json in Resources */ = {isa = PBXBuildFile; fileRef = CB34B4CF23216D2A009EEE2F /* FeverChart_AnimOff.json */; };
+		CB34B51323216D2A009EEE2F /* Maximize_AnimOn.json in Resources */ = {isa = PBXBuildFile; fileRef = CB34B4D023216D2A009EEE2F /* Maximize_AnimOn.json */; };
+		CB34B51423216D2A009EEE2F /* Screen_AnimOff.json in Resources */ = {isa = PBXBuildFile; fileRef = CB34B4D123216D2A009EEE2F /* Screen_AnimOff.json */; };
+		CB34B51523216D2A009EEE2F /* Thumbsdown_Animate.json in Resources */ = {isa = PBXBuildFile; fileRef = CB34B4D223216D2A009EEE2F /* Thumbsdown_Animate.json */; };
+		CB34B51623216D2A009EEE2F /* Eye_AnimOn.json in Resources */ = {isa = PBXBuildFile; fileRef = CB34B4D323216D2A009EEE2F /* Eye_AnimOn.json */; };
+		CB34B51723216D2A009EEE2F /* Reload_AnimOn.json in Resources */ = {isa = PBXBuildFile; fileRef = CB34B4D423216D2A009EEE2F /* Reload_AnimOn.json */; };
+		CB34B51823216D2A009EEE2F /* Reload_AnimOff.json in Resources */ = {isa = PBXBuildFile; fileRef = CB34B4D523216D2A009EEE2F /* Reload_AnimOff.json */; };
+		CB34B51923216D2A009EEE2F /* Alarm_AnimOn.json in Resources */ = {isa = PBXBuildFile; fileRef = CB34B4D623216D2A009EEE2F /* Alarm_AnimOn.json */; };
+		CB34B51A23216D2A009EEE2F /* Globe_AnimOn.json in Resources */ = {isa = PBXBuildFile; fileRef = CB34B4D723216D2A009EEE2F /* Globe_AnimOn.json */; };
+		CB34B51B23216D2A009EEE2F /* Heart_Beat.json in Resources */ = {isa = PBXBuildFile; fileRef = CB34B4D823216D2A009EEE2F /* Heart_Beat.json */; };
+		CB34B51C23216D2A009EEE2F /* Thumbsup_Animate.json in Resources */ = {isa = PBXBuildFile; fileRef = CB34B4D923216D2A009EEE2F /* Thumbsup_Animate.json */; };
+		CB34B51D23216D2A009EEE2F /* Telephone_Ring.json in Resources */ = {isa = PBXBuildFile; fileRef = CB34B4DA23216D2A009EEE2F /* Telephone_Ring.json */; };
+		CB34B51F23216D2A009EEE2F /* Thumbsdown_AnimOn.json in Resources */ = {isa = PBXBuildFile; fileRef = CB34B4DC23216D2A009EEE2F /* Thumbsdown_AnimOn.json */; };
+		CB34B52023216D2A009EEE2F /* Share_AnimOff.json in Resources */ = {isa = PBXBuildFile; fileRef = CB34B4DD23216D2A009EEE2F /* Share_AnimOff.json */; };
+		CB34B52123216D2A009EEE2F /* PriceTag_AnimOff.json in Resources */ = {isa = PBXBuildFile; fileRef = CB34B4DE23216D2A009EEE2F /* PriceTag_AnimOff.json */; };
+		CB34B52223216D2A009EEE2F /* BarChart_AnimOn.json in Resources */ = {isa = PBXBuildFile; fileRef = CB34B4DF23216D2A009EEE2F /* BarChart_AnimOn.json */; };
+		CB34B52323216D2A009EEE2F /* BarChart_AnimOff.json in Resources */ = {isa = PBXBuildFile; fileRef = CB34B4E023216D2A009EEE2F /* BarChart_AnimOff.json */; };
+		CB34B52423216D2A009EEE2F /* Camera_AnimOn.json in Resources */ = {isa = PBXBuildFile; fileRef = CB34B4E123216D2A009EEE2F /* Camera_AnimOn.json */; };
+		CB34B52523216D2A009EEE2F /* UsePencil_AnimOff.json in Resources */ = {isa = PBXBuildFile; fileRef = CB34B4E223216D2A009EEE2F /* UsePencil_AnimOff.json */; };
+		CB34B52623216D2A009EEE2F /* Heart_AnimOn.json in Resources */ = {isa = PBXBuildFile; fileRef = CB34B4E323216D2A009EEE2F /* Heart_AnimOn.json */; };
+		CB34B52723216D2A009EEE2F /* Printer_Print.json in Resources */ = {isa = PBXBuildFile; fileRef = CB34B4E423216D2A009EEE2F /* Printer_Print.json */; };
+		CB34B52823216D2A009EEE2F /* Thumbsup_AnimOff.json in Resources */ = {isa = PBXBuildFile; fileRef = CB34B4E523216D2A009EEE2F /* Thumbsup_AnimOff.json */; };
+		CB34B52923216D2A009EEE2F /* SpeechBubble_Dots.json in Resources */ = {isa = PBXBuildFile; fileRef = CB34B4E623216D2A009EEE2F /* SpeechBubble_Dots.json */; };
+		CB34B52A23216D2A009EEE2F /* Heart_AnimOff.json in Resources */ = {isa = PBXBuildFile; fileRef = CB34B4E723216D2A009EEE2F /* Heart_AnimOff.json */; };
+		CB34B52B23216D2A009EEE2F /* Camera_Flash.json in Resources */ = {isa = PBXBuildFile; fileRef = CB34B4E823216D2A009EEE2F /* Camera_Flash.json */; };
+		CB34B52C23216D2A009EEE2F /* ShoppingCart_AnimOn.json in Resources */ = {isa = PBXBuildFile; fileRef = CB34B4E923216D2A009EEE2F /* ShoppingCart_AnimOn.json */; };
+		CB34B52D23216D2A009EEE2F /* Home_AnimOff.json in Resources */ = {isa = PBXBuildFile; fileRef = CB34B4EA23216D2A009EEE2F /* Home_AnimOff.json */; };
+		CB34B52E23216D2A009EEE2F /* Globe_AnimOff.json in Resources */ = {isa = PBXBuildFile; fileRef = CB34B4EB23216D2A009EEE2F /* Globe_AnimOff.json */; };
+		CB34B52F23216D2A009EEE2F /* Paper_AnimOff.json in Resources */ = {isa = PBXBuildFile; fileRef = CB34B4EC23216D2A009EEE2F /* Paper_AnimOff.json */; };
+		CB34B53023216D2A009EEE2F /* FeverChart_AnimOn.json in Resources */ = {isa = PBXBuildFile; fileRef = CB34B4ED23216D2A009EEE2F /* FeverChart_AnimOn.json */; };
+		CB34B53123216D2A009EEE2F /* Paper_AnimOn.json in Resources */ = {isa = PBXBuildFile; fileRef = CB34B4EE23216D2A009EEE2F /* Paper_AnimOn.json */; };
+		CB34B53223216D2A009EEE2F /* PieChart_AnimOn.json in Resources */ = {isa = PBXBuildFile; fileRef = CB34B4EF23216D2A009EEE2F /* PieChart_AnimOn.json */; };
+		CB34B53323216D2A009EEE2F /* Padlock_LockIt.json in Resources */ = {isa = PBXBuildFile; fileRef = CB34B4F023216D2A009EEE2F /* Padlock_LockIt.json */; };
+		CB34B53423216D2A009EEE2F /* Telephone_AnimOn.json in Resources */ = {isa = PBXBuildFile; fileRef = CB34B4F123216D2A009EEE2F /* Telephone_AnimOn.json */; };
+		CB34B53523216D2A009EEE2F /* Download_AnimOn.json in Resources */ = {isa = PBXBuildFile; fileRef = CB34B4F223216D2A009EEE2F /* Download_AnimOn.json */; };
+		CB34B53623216D2A009EEE2F /* Maximize_AnimOff.json in Resources */ = {isa = PBXBuildFile; fileRef = CB34B4F323216D2A009EEE2F /* Maximize_AnimOff.json */; };
+		CB34B53723216D2A009EEE2F /* MagnifyingGlass_AnimOn.json in Resources */ = {isa = PBXBuildFile; fileRef = CB34B4F423216D2A009EEE2F /* MagnifyingGlass_AnimOn.json */; };
+		CB34B53823216D2A009EEE2F /* Thumbsup_AnimOn.json in Resources */ = {isa = PBXBuildFile; fileRef = CB34B4F523216D2A009EEE2F /* Thumbsup_AnimOn.json */; };
+		CB34B53923216D2A009EEE2F /* Camera_AnimOff.json in Resources */ = {isa = PBXBuildFile; fileRef = CB34B4F623216D2A009EEE2F /* Camera_AnimOff.json */; };
+		CB34B53A23216D2A009EEE2F /* SpeechBubble_AnimOn.json in Resources */ = {isa = PBXBuildFile; fileRef = CB34B4F723216D2A009EEE2F /* SpeechBubble_AnimOn.json */; };
+		CB34B53B23216D2A009EEE2F /* Download_AnimOff.json in Resources */ = {isa = PBXBuildFile; fileRef = CB34B4F823216D2A009EEE2F /* Download_AnimOff.json */; };
+		CB34B53D23216D75009EEE2F /* LottieList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB34B53C23216D75009EEE2F /* LottieList.swift */; };
 		CBCCC5D6232018C000848C68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCCC5D5232018C000848C68 /* AppDelegate.swift */; };
 		CBCCC5D8232018C000848C68 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCCC5D7232018C000848C68 /* SceneDelegate.swift */; };
 		CBCCC5DA232018C000848C68 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCCC5D9232018C000848C68 /* ContentView.swift */; };
@@ -19,6 +86,73 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CB34B4B623216D2A009EEE2F /* Download_Down.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Download_Down.json; sourceTree = "<group>"; };
+		CB34B4B723216D2A009EEE2F /* Padlock_UnlockIt.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Padlock_UnlockIt.json; sourceTree = "<group>"; };
+		CB34B4B823216D2A009EEE2F /* PieChart_AnimOff.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PieChart_AnimOff.json; sourceTree = "<group>"; };
+		CB34B4B923216D2A009EEE2F /* PriceTag_AnimOn.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PriceTag_AnimOn.json; sourceTree = "<group>"; };
+		CB34B4BA23216D2A009EEE2F /* Home_AnimOn.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Home_AnimOn.json; sourceTree = "<group>"; };
+		CB34B4BB23216D2A009EEE2F /* Printer_AnimOff.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Printer_AnimOff.json; sourceTree = "<group>"; };
+		CB34B4BC23216D2A009EEE2F /* Text_AnimOn.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Text_AnimOn.json; sourceTree = "<group>"; };
+		CB34B4BD23216D2A009EEE2F /* Eye_Blinks.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Eye_Blinks.json; sourceTree = "<group>"; };
+		CB34B4BE23216D2A009EEE2F /* Telephone_AnimOff.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Telephone_AnimOff.json; sourceTree = "<group>"; };
+		CB34B4BF23216D2A009EEE2F /* Eye_AnimOff.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Eye_AnimOff.json; sourceTree = "<group>"; };
+		CB34B4C023216D2A009EEE2F /* LoudMute_Loud.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LoudMute_Loud.json; sourceTree = "<group>"; };
+		CB34B4C123216D2A009EEE2F /* UsePencil_AnimOn.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = UsePencil_AnimOn.json; sourceTree = "<group>"; };
+		CB34B4C223216D2A009EEE2F /* Thumbsdown_AnimOff.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Thumbsdown_AnimOff.json; sourceTree = "<group>"; };
+		CB34B4C323216D2A009EEE2F /* MagnifyingGlass_AnimOff.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MagnifyingGlass_AnimOff.json; sourceTree = "<group>"; };
+		CB34B4C423216D2A009EEE2F /* Screen_AnimOn.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Screen_AnimOn.json; sourceTree = "<group>"; };
+		CB34B4C523216D2A009EEE2F /* Alarm_AnimOff.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Alarm_AnimOff.json; sourceTree = "<group>"; };
+		CB34B4C623216D2A009EEE2F /* Minimize_AnimOn.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Minimize_AnimOn.json; sourceTree = "<group>"; };
+		CB34B4C723216D2A009EEE2F /* Alarm_Ring.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Alarm_Ring.json; sourceTree = "<group>"; };
+		CB34B4C823216D2A009EEE2F /* LoudMute_Mute.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LoudMute_Mute.json; sourceTree = "<group>"; };
+		CB34B4C923216D2A009EEE2F /* Share_AnimOn.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Share_AnimOn.json; sourceTree = "<group>"; };
+		CB34B4CA23216D2A009EEE2F /* SpeechBubble_AnimOff.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SpeechBubble_AnimOff.json; sourceTree = "<group>"; };
+		CB34B4CB23216D2A009EEE2F /* Text_AnimOff.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Text_AnimOff.json; sourceTree = "<group>"; };
+		CB34B4CC23216D2A009EEE2F /* Printer_AnimOn.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Printer_AnimOn.json; sourceTree = "<group>"; };
+		CB34B4CD23216D2A009EEE2F /* Minimize_AnimOff.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Minimize_AnimOff.json; sourceTree = "<group>"; };
+		CB34B4CE23216D2A009EEE2F /* ShoppingCart_AnimOff.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ShoppingCart_AnimOff.json; sourceTree = "<group>"; };
+		CB34B4CF23216D2A009EEE2F /* FeverChart_AnimOff.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = FeverChart_AnimOff.json; sourceTree = "<group>"; };
+		CB34B4D023216D2A009EEE2F /* Maximize_AnimOn.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Maximize_AnimOn.json; sourceTree = "<group>"; };
+		CB34B4D123216D2A009EEE2F /* Screen_AnimOff.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Screen_AnimOff.json; sourceTree = "<group>"; };
+		CB34B4D223216D2A009EEE2F /* Thumbsdown_Animate.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Thumbsdown_Animate.json; sourceTree = "<group>"; };
+		CB34B4D323216D2A009EEE2F /* Eye_AnimOn.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Eye_AnimOn.json; sourceTree = "<group>"; };
+		CB34B4D423216D2A009EEE2F /* Reload_AnimOn.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Reload_AnimOn.json; sourceTree = "<group>"; };
+		CB34B4D523216D2A009EEE2F /* Reload_AnimOff.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Reload_AnimOff.json; sourceTree = "<group>"; };
+		CB34B4D623216D2A009EEE2F /* Alarm_AnimOn.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Alarm_AnimOn.json; sourceTree = "<group>"; };
+		CB34B4D723216D2A009EEE2F /* Globe_AnimOn.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Globe_AnimOn.json; sourceTree = "<group>"; };
+		CB34B4D823216D2A009EEE2F /* Heart_Beat.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Heart_Beat.json; sourceTree = "<group>"; };
+		CB34B4D923216D2A009EEE2F /* Thumbsup_Animate.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Thumbsup_Animate.json; sourceTree = "<group>"; };
+		CB34B4DA23216D2A009EEE2F /* Telephone_Ring.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Telephone_Ring.json; sourceTree = "<group>"; };
+		CB34B4DC23216D2A009EEE2F /* Thumbsdown_AnimOn.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Thumbsdown_AnimOn.json; sourceTree = "<group>"; };
+		CB34B4DD23216D2A009EEE2F /* Share_AnimOff.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Share_AnimOff.json; sourceTree = "<group>"; };
+		CB34B4DE23216D2A009EEE2F /* PriceTag_AnimOff.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PriceTag_AnimOff.json; sourceTree = "<group>"; };
+		CB34B4DF23216D2A009EEE2F /* BarChart_AnimOn.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = BarChart_AnimOn.json; sourceTree = "<group>"; };
+		CB34B4E023216D2A009EEE2F /* BarChart_AnimOff.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = BarChart_AnimOff.json; sourceTree = "<group>"; };
+		CB34B4E123216D2A009EEE2F /* Camera_AnimOn.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Camera_AnimOn.json; sourceTree = "<group>"; };
+		CB34B4E223216D2A009EEE2F /* UsePencil_AnimOff.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = UsePencil_AnimOff.json; sourceTree = "<group>"; };
+		CB34B4E323216D2A009EEE2F /* Heart_AnimOn.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Heart_AnimOn.json; sourceTree = "<group>"; };
+		CB34B4E423216D2A009EEE2F /* Printer_Print.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Printer_Print.json; sourceTree = "<group>"; };
+		CB34B4E523216D2A009EEE2F /* Thumbsup_AnimOff.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Thumbsup_AnimOff.json; sourceTree = "<group>"; };
+		CB34B4E623216D2A009EEE2F /* SpeechBubble_Dots.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SpeechBubble_Dots.json; sourceTree = "<group>"; };
+		CB34B4E723216D2A009EEE2F /* Heart_AnimOff.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Heart_AnimOff.json; sourceTree = "<group>"; };
+		CB34B4E823216D2A009EEE2F /* Camera_Flash.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Camera_Flash.json; sourceTree = "<group>"; };
+		CB34B4E923216D2A009EEE2F /* ShoppingCart_AnimOn.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ShoppingCart_AnimOn.json; sourceTree = "<group>"; };
+		CB34B4EA23216D2A009EEE2F /* Home_AnimOff.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Home_AnimOff.json; sourceTree = "<group>"; };
+		CB34B4EB23216D2A009EEE2F /* Globe_AnimOff.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Globe_AnimOff.json; sourceTree = "<group>"; };
+		CB34B4EC23216D2A009EEE2F /* Paper_AnimOff.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Paper_AnimOff.json; sourceTree = "<group>"; };
+		CB34B4ED23216D2A009EEE2F /* FeverChart_AnimOn.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = FeverChart_AnimOn.json; sourceTree = "<group>"; };
+		CB34B4EE23216D2A009EEE2F /* Paper_AnimOn.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Paper_AnimOn.json; sourceTree = "<group>"; };
+		CB34B4EF23216D2A009EEE2F /* PieChart_AnimOn.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PieChart_AnimOn.json; sourceTree = "<group>"; };
+		CB34B4F023216D2A009EEE2F /* Padlock_LockIt.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Padlock_LockIt.json; sourceTree = "<group>"; };
+		CB34B4F123216D2A009EEE2F /* Telephone_AnimOn.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Telephone_AnimOn.json; sourceTree = "<group>"; };
+		CB34B4F223216D2A009EEE2F /* Download_AnimOn.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Download_AnimOn.json; sourceTree = "<group>"; };
+		CB34B4F323216D2A009EEE2F /* Maximize_AnimOff.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Maximize_AnimOff.json; sourceTree = "<group>"; };
+		CB34B4F423216D2A009EEE2F /* MagnifyingGlass_AnimOn.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MagnifyingGlass_AnimOn.json; sourceTree = "<group>"; };
+		CB34B4F523216D2A009EEE2F /* Thumbsup_AnimOn.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Thumbsup_AnimOn.json; sourceTree = "<group>"; };
+		CB34B4F623216D2A009EEE2F /* Camera_AnimOff.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Camera_AnimOff.json; sourceTree = "<group>"; };
+		CB34B4F723216D2A009EEE2F /* SpeechBubble_AnimOn.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SpeechBubble_AnimOn.json; sourceTree = "<group>"; };
+		CB34B4F823216D2A009EEE2F /* Download_AnimOff.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Download_AnimOff.json; sourceTree = "<group>"; };
+		CB34B53C23216D75009EEE2F /* LottieList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieList.swift; sourceTree = "<group>"; };
 		CBCCC5D2232018C000848C68 /* LottieShowcase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LottieShowcase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBCCC5D5232018C000848C68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBCCC5D7232018C000848C68 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +177,80 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CB34B4B523216D2A009EEE2F /* LottieFiles */ = {
+			isa = PBXGroup;
+			children = (
+				CB34B4B623216D2A009EEE2F /* Download_Down.json */,
+				CB34B4B723216D2A009EEE2F /* Padlock_UnlockIt.json */,
+				CB34B4B823216D2A009EEE2F /* PieChart_AnimOff.json */,
+				CB34B4B923216D2A009EEE2F /* PriceTag_AnimOn.json */,
+				CB34B4BA23216D2A009EEE2F /* Home_AnimOn.json */,
+				CB34B4BB23216D2A009EEE2F /* Printer_AnimOff.json */,
+				CB34B4BC23216D2A009EEE2F /* Text_AnimOn.json */,
+				CB34B4BD23216D2A009EEE2F /* Eye_Blinks.json */,
+				CB34B4BE23216D2A009EEE2F /* Telephone_AnimOff.json */,
+				CB34B4BF23216D2A009EEE2F /* Eye_AnimOff.json */,
+				CB34B4C023216D2A009EEE2F /* LoudMute_Loud.json */,
+				CB34B4C123216D2A009EEE2F /* UsePencil_AnimOn.json */,
+				CB34B4C223216D2A009EEE2F /* Thumbsdown_AnimOff.json */,
+				CB34B4C323216D2A009EEE2F /* MagnifyingGlass_AnimOff.json */,
+				CB34B4C423216D2A009EEE2F /* Screen_AnimOn.json */,
+				CB34B4C523216D2A009EEE2F /* Alarm_AnimOff.json */,
+				CB34B4C623216D2A009EEE2F /* Minimize_AnimOn.json */,
+				CB34B4C723216D2A009EEE2F /* Alarm_Ring.json */,
+				CB34B4C823216D2A009EEE2F /* LoudMute_Mute.json */,
+				CB34B4C923216D2A009EEE2F /* Share_AnimOn.json */,
+				CB34B4CA23216D2A009EEE2F /* SpeechBubble_AnimOff.json */,
+				CB34B4CB23216D2A009EEE2F /* Text_AnimOff.json */,
+				CB34B4CC23216D2A009EEE2F /* Printer_AnimOn.json */,
+				CB34B4CD23216D2A009EEE2F /* Minimize_AnimOff.json */,
+				CB34B4CE23216D2A009EEE2F /* ShoppingCart_AnimOff.json */,
+				CB34B4CF23216D2A009EEE2F /* FeverChart_AnimOff.json */,
+				CB34B4D023216D2A009EEE2F /* Maximize_AnimOn.json */,
+				CB34B4D123216D2A009EEE2F /* Screen_AnimOff.json */,
+				CB34B4D223216D2A009EEE2F /* Thumbsdown_Animate.json */,
+				CB34B4D323216D2A009EEE2F /* Eye_AnimOn.json */,
+				CB34B4D423216D2A009EEE2F /* Reload_AnimOn.json */,
+				CB34B4D523216D2A009EEE2F /* Reload_AnimOff.json */,
+				CB34B4D623216D2A009EEE2F /* Alarm_AnimOn.json */,
+				CB34B4D723216D2A009EEE2F /* Globe_AnimOn.json */,
+				CB34B4D823216D2A009EEE2F /* Heart_Beat.json */,
+				CB34B4D923216D2A009EEE2F /* Thumbsup_Animate.json */,
+				CB34B4DA23216D2A009EEE2F /* Telephone_Ring.json */,
+				CB34B4DC23216D2A009EEE2F /* Thumbsdown_AnimOn.json */,
+				CB34B4DD23216D2A009EEE2F /* Share_AnimOff.json */,
+				CB34B4DE23216D2A009EEE2F /* PriceTag_AnimOff.json */,
+				CB34B4DF23216D2A009EEE2F /* BarChart_AnimOn.json */,
+				CB34B4E023216D2A009EEE2F /* BarChart_AnimOff.json */,
+				CB34B4E123216D2A009EEE2F /* Camera_AnimOn.json */,
+				CB34B4E223216D2A009EEE2F /* UsePencil_AnimOff.json */,
+				CB34B4E323216D2A009EEE2F /* Heart_AnimOn.json */,
+				CB34B4E423216D2A009EEE2F /* Printer_Print.json */,
+				CB34B4E523216D2A009EEE2F /* Thumbsup_AnimOff.json */,
+				CB34B4E623216D2A009EEE2F /* SpeechBubble_Dots.json */,
+				CB34B4E723216D2A009EEE2F /* Heart_AnimOff.json */,
+				CB34B4E823216D2A009EEE2F /* Camera_Flash.json */,
+				CB34B4E923216D2A009EEE2F /* ShoppingCart_AnimOn.json */,
+				CB34B4EA23216D2A009EEE2F /* Home_AnimOff.json */,
+				CB34B4EB23216D2A009EEE2F /* Globe_AnimOff.json */,
+				CB34B4EC23216D2A009EEE2F /* Paper_AnimOff.json */,
+				CB34B4ED23216D2A009EEE2F /* FeverChart_AnimOn.json */,
+				CB34B4EE23216D2A009EEE2F /* Paper_AnimOn.json */,
+				CB34B4EF23216D2A009EEE2F /* PieChart_AnimOn.json */,
+				CB34B4F023216D2A009EEE2F /* Padlock_LockIt.json */,
+				CB34B4F123216D2A009EEE2F /* Telephone_AnimOn.json */,
+				CB34B4F223216D2A009EEE2F /* Download_AnimOn.json */,
+				CB34B4F323216D2A009EEE2F /* Maximize_AnimOff.json */,
+				CB34B4F423216D2A009EEE2F /* MagnifyingGlass_AnimOn.json */,
+				CB34B4F523216D2A009EEE2F /* Thumbsup_AnimOn.json */,
+				CB34B4F623216D2A009EEE2F /* Camera_AnimOff.json */,
+				CB34B4F723216D2A009EEE2F /* SpeechBubble_AnimOn.json */,
+				CB34B4F823216D2A009EEE2F /* Download_AnimOff.json */,
+				CB34B53C23216D75009EEE2F /* LottieList.swift */,
+			);
+			path = LottieFiles;
+			sourceTree = "<group>";
+		};
 		CBCCC5C9232018C000848C68 = {
 			isa = PBXGroup;
 			children = (
@@ -65,6 +273,7 @@
 				CBCCC5D5232018C000848C68 /* AppDelegate.swift */,
 				CBCCC5EC2320194A00848C68 /* LottieTest.json */,
 				CBCCC5D7232018C000848C68 /* SceneDelegate.swift */,
+				CB34B4B523216D2A009EEE2F /* LottieFiles */,
 				CBCCC5EB2320190800848C68 /* View */,
 				CBCCC5DB232018C100848C68 /* Assets.xcassets */,
 				CBCCC5E0232018C100848C68 /* LaunchScreen.storyboard */,
@@ -155,10 +364,76 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB34B51123216D2A009EEE2F /* ShoppingCart_AnimOff.json in Resources */,
+				CB34B52623216D2A009EEE2F /* Heart_AnimOn.json in Resources */,
+				CB34B52A23216D2A009EEE2F /* Heart_AnimOff.json in Resources */,
+				CB34B51623216D2A009EEE2F /* Eye_AnimOn.json in Resources */,
 				CBCCC5F023201C5300848C68 /* LottieTest.json in Resources */,
+				CB34B4FA23216D2A009EEE2F /* Padlock_UnlockIt.json in Resources */,
+				CB34B50D23216D2A009EEE2F /* SpeechBubble_AnimOff.json in Resources */,
+				CB34B51B23216D2A009EEE2F /* Heart_Beat.json in Resources */,
+				CB34B50F23216D2A009EEE2F /* Printer_AnimOn.json in Resources */,
+				CB34B52F23216D2A009EEE2F /* Paper_AnimOff.json in Resources */,
+				CB34B4F923216D2A009EEE2F /* Download_Down.json in Resources */,
+				CB34B51223216D2A009EEE2F /* FeverChart_AnimOff.json in Resources */,
+				CB34B51D23216D2A009EEE2F /* Telephone_Ring.json in Resources */,
+				CB34B52023216D2A009EEE2F /* Share_AnimOff.json in Resources */,
+				CB34B52123216D2A009EEE2F /* PriceTag_AnimOff.json in Resources */,
 				CBCCC5E2232018C100848C68 /* LaunchScreen.storyboard in Resources */,
+				CB34B53223216D2A009EEE2F /* PieChart_AnimOn.json in Resources */,
+				CB34B4FC23216D2A009EEE2F /* PriceTag_AnimOn.json in Resources */,
+				CB34B51C23216D2A009EEE2F /* Thumbsup_Animate.json in Resources */,
+				CB34B50C23216D2A009EEE2F /* Share_AnimOn.json in Resources */,
 				CBCCC5DF232018C100848C68 /* Preview Assets.xcassets in Resources */,
+				CB34B53523216D2A009EEE2F /* Download_AnimOn.json in Resources */,
+				CB34B50823216D2A009EEE2F /* Alarm_AnimOff.json in Resources */,
+				CB34B51F23216D2A009EEE2F /* Thumbsdown_AnimOn.json in Resources */,
+				CB34B52C23216D2A009EEE2F /* ShoppingCart_AnimOn.json in Resources */,
+				CB34B53423216D2A009EEE2F /* Telephone_AnimOn.json in Resources */,
+				CB34B52723216D2A009EEE2F /* Printer_Print.json in Resources */,
+				CB34B52823216D2A009EEE2F /* Thumbsup_AnimOff.json in Resources */,
+				CB34B52423216D2A009EEE2F /* Camera_AnimOn.json in Resources */,
+				CB34B52D23216D2A009EEE2F /* Home_AnimOff.json in Resources */,
+				CB34B52323216D2A009EEE2F /* BarChart_AnimOff.json in Resources */,
+				CB34B52523216D2A009EEE2F /* UsePencil_AnimOff.json in Resources */,
+				CB34B51023216D2A009EEE2F /* Minimize_AnimOff.json in Resources */,
+				CB34B50A23216D2A009EEE2F /* Alarm_Ring.json in Resources */,
+				CB34B50423216D2A009EEE2F /* UsePencil_AnimOn.json in Resources */,
+				CB34B52B23216D2A009EEE2F /* Camera_Flash.json in Resources */,
+				CB34B53323216D2A009EEE2F /* Padlock_LockIt.json in Resources */,
+				CB34B50123216D2A009EEE2F /* Telephone_AnimOff.json in Resources */,
+				CB34B53123216D2A009EEE2F /* Paper_AnimOn.json in Resources */,
+				CB34B51A23216D2A009EEE2F /* Globe_AnimOn.json in Resources */,
+				CB34B51823216D2A009EEE2F /* Reload_AnimOff.json in Resources */,
+				CB34B52223216D2A009EEE2F /* BarChart_AnimOn.json in Resources */,
+				CB34B4FB23216D2A009EEE2F /* PieChart_AnimOff.json in Resources */,
+				CB34B53923216D2A009EEE2F /* Camera_AnimOff.json in Resources */,
+				CB34B53623216D2A009EEE2F /* Maximize_AnimOff.json in Resources */,
 				CBCCC5DC232018C100848C68 /* Assets.xcassets in Resources */,
+				CB34B50523216D2A009EEE2F /* Thumbsdown_AnimOff.json in Resources */,
+				CB34B53823216D2A009EEE2F /* Thumbsup_AnimOn.json in Resources */,
+				CB34B50023216D2A009EEE2F /* Eye_Blinks.json in Resources */,
+				CB34B51923216D2A009EEE2F /* Alarm_AnimOn.json in Resources */,
+				CB34B51723216D2A009EEE2F /* Reload_AnimOn.json in Resources */,
+				CB34B53023216D2A009EEE2F /* FeverChart_AnimOn.json in Resources */,
+				CB34B51523216D2A009EEE2F /* Thumbsdown_Animate.json in Resources */,
+				CB34B50623216D2A009EEE2F /* MagnifyingGlass_AnimOff.json in Resources */,
+				CB34B50923216D2A009EEE2F /* Minimize_AnimOn.json in Resources */,
+				CB34B50323216D2A009EEE2F /* LoudMute_Loud.json in Resources */,
+				CB34B53B23216D2A009EEE2F /* Download_AnimOff.json in Resources */,
+				CB34B4FD23216D2A009EEE2F /* Home_AnimOn.json in Resources */,
+				CB34B4FF23216D2A009EEE2F /* Text_AnimOn.json in Resources */,
+				CB34B51323216D2A009EEE2F /* Maximize_AnimOn.json in Resources */,
+				CB34B51423216D2A009EEE2F /* Screen_AnimOff.json in Resources */,
+				CB34B50E23216D2A009EEE2F /* Text_AnimOff.json in Resources */,
+				CB34B53723216D2A009EEE2F /* MagnifyingGlass_AnimOn.json in Resources */,
+				CB34B52923216D2A009EEE2F /* SpeechBubble_Dots.json in Resources */,
+				CB34B50723216D2A009EEE2F /* Screen_AnimOn.json in Resources */,
+				CB34B52E23216D2A009EEE2F /* Globe_AnimOff.json in Resources */,
+				CB34B50B23216D2A009EEE2F /* LoudMute_Mute.json in Resources */,
+				CB34B50223216D2A009EEE2F /* Eye_AnimOff.json in Resources */,
+				CB34B4FE23216D2A009EEE2F /* Printer_AnimOff.json in Resources */,
+				CB34B53A23216D2A009EEE2F /* SpeechBubble_AnimOn.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,6 +444,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB34B53D23216D75009EEE2F /* LottieList.swift in Sources */,
 				CBCCC5D6232018C000848C68 /* AppDelegate.swift in Sources */,
 				CBCCC5D8232018C000848C68 /* SceneDelegate.swift in Sources */,
 				CBCCC5DA232018C000848C68 /* ContentView.swift in Sources */,
