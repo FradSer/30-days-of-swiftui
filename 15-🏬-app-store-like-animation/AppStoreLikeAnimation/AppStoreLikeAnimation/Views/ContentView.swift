@@ -10,12 +10,12 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        ZStack {
-        Rectangle()
-            .foregroundColor(Color("BackgroundColor"))
-            .edgesIgnoringSafeArea(.all)
-        Text("Hello World")
+        ScrollView() {
+            CardView()
+            CardView()
+            CardView()
         }
+        .edgesIgnoringSafeArea(.top)
     }
 }
 
