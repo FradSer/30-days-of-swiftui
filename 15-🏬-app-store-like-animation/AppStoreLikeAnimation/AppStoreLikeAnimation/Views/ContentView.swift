@@ -15,7 +15,6 @@ struct ContentView: View {
             CardView()
             CardView()
         }
-        .edgesIgnoringSafeArea(.top)
     }
 }
 

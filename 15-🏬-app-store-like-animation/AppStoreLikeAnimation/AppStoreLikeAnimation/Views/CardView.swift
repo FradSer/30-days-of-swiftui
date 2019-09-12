@@ -9,52 +9,68 @@
 import SwiftUI
 
 // MARK: - Setup
-
-
-// MARK: - Card View
-struct CardView: View {
-    var body: some View {
-        CardViewHeader()
+extension AnyTransition {
+    static var moveAndScale: AnyTransition {
+        AnyTransition.move(edge: .bottom).combined(with: .scale)
     }
 }
 
-// MARK: Card View Header
-struct CardViewHeader: View {
+// MARK: - Card View
+struct CardView: View {
     
     @State private var cardActived: Bool = false
     
     var body: some View {
-        ZStack {
-            Rectangle()
-                .foregroundColor(Color.gray)
-            VStack(alignment: .leading) {
-                Text("Get Started".uppercased())
-                    .font(.headline)
-                    .padding(.top, 50)
-                HStack {
-                    Text("Title of the Super App")
-                        .font(.largeTitle)
-                        .fontWeight(.black)
-                        .multilineTextAlignment(.leading)
-                        .padding(.trailing, 150)
+        ScrollView {
+            ZStack {
+                Rectangle()
+                    .foregroundColor(Color.gray)
+                    .cornerRadius(cardActived ? 0 : 16)
+                VStack(alignment: .leading) {
+                    Text("Get Started".uppercased())
+                        .font(.headline)
+                        .padding(.top, cardActived ? 50 : nil)
+                    HStack {
+                        Text("Title of the Super App")
+                            .font(.largeTitle)
+                            .fontWeight(.black)
+                            .multilineTextAlignment(.leading)
+                            .padding(.trailing, 100)
+                        Spacer()
+                    }
                     Spacer()
+                    Text("The most descriptive text ever")
+                        .font(.headline)
+                        .padding(.bottom)
+                    }.padding()
+                if self.cardActived {
+                    VStack {
+                        HStack {
+                            Spacer()
+                            Button(action: { self.cardActived = false }) {
+                                Image(systemName: "xmark.circle.fill").font(.largeTitle).foregroundColor(Color.white).padding(.top, 64).padding(.trailing, 32).shadow(radius: 16)
+                            }
+                        }
+                        Spacer()
+                    }
                 }
-                Spacer()
-                Text("The most descriptive text ever")
-                    .font(.headline)
-                    .padding(.bottom)
-                }.padding()
             }
-            .frame(height: cardActived ? nil : 500)
-            .padding()
-            .onTapGesture {
-                self.cardActived = true
-                print(self.cardActived)
+            .frame(height: 500)
+            .padding(cardActived ? 0 :16)
+            .onTapGesture { self.cardActived = true }
+            .animation(.spring())
+            if self.cardActived {
+                CardDetailsView().transition(.moveAndScale)
+            }
         }
+//        .frame(width: UIScreen.main.bounds.width, height: cardActived ? 500 : UIScreen.main.bounds.height, alignment: .top)
+        .edgesIgnoringSafeArea(cardActived ? .top : .bottom)
+        .statusBar(hidden: cardActived ? true : false)
+        
     }
 }
 
-struct CardView_Previews_DarkMode: PreviewProvider {
+struct CardView_Previews: PreviewProvider {
     static var previews: some View {
         ZStack {
             CardView()
