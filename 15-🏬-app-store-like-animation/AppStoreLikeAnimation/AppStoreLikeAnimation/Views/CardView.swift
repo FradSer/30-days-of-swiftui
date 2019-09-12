@@ -59,16 +59,15 @@ struct CardView: View {
             }
             .frame(height: 500)
             .padding(cardActived ? 0 :16)
-            .onTapGesture { self.cardActived = true }
-            .animation(.spring())
+            .onTapGesture { self.cardActived.toggle()}
             if self.cardActived {
                 CardDetailsView().transition(.moveAndScale)
             }
         }
         .frame(height: cardActived ? screenSize.height : 532, alignment: .top)
-        .edgesIgnoringSafeArea(cardActived ? .top : .bottom)
+        .edgesIgnoringSafeArea(.all)
         .statusBar(hidden: cardActived ? true : false)
-        
+        .animation(.easeInOut(duration: 0.5))
     }
 }
 

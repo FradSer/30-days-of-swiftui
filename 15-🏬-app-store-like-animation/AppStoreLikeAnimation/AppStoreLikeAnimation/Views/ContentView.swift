@@ -20,15 +20,14 @@ struct ContentView: View {
             }
             if self.actived {
                 CardView(cardActived: true)
-                    .transition(.moveAndScale)
                     .zIndex(1)
-                    .animation(.default)
-                    .background(Color.white)
                     .onTapGesture {
                         self.actived.toggle()
                 }
             }
-        }.statusBar(hidden: actived ? true : false)
+        }
+        .statusBar(hidden: actived ? true : false)
+        .edgesIgnoringSafeArea(actived ? .all : .horizontal)
     }
 }
 
