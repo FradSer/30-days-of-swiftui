@@ -9,6 +9,8 @@
 import SwiftUI
 
 // MARK: - Setup
+let screenSize = UIScreen.main.bounds
+
 extension AnyTransition {
     static var moveAndScale: AnyTransition {
         AnyTransition.move(edge: .bottom).combined(with: .scale)
@@ -18,7 +20,7 @@ extension AnyTransition {
 // MARK: - Card View
 struct CardView: View {
     
-    @State private var cardActived: Bool = false
+    @State var cardActived: Bool
     
     var body: some View {
         ScrollView {
@@ -63,7 +65,7 @@ struct CardView: View {
                 CardDetailsView().transition(.moveAndScale)
             }
         }
-//        .frame(width: UIScreen.main.bounds.width, height: cardActived ? 500 : UIScreen.main.bounds.height, alignment: .top)
+        .frame(height: cardActived ? screenSize.height : 532, alignment: .top)
         .edgesIgnoringSafeArea(cardActived ? .top : .bottom)
         .statusBar(hidden: cardActived ? true : false)
         
@@ -73,7 +75,7 @@ struct CardView: View {
 struct CardView_Previews: PreviewProvider {
     static var previews: some View {
         ZStack {
-            CardView()
+            CardView(cardActived: false)
         }
     }
 }

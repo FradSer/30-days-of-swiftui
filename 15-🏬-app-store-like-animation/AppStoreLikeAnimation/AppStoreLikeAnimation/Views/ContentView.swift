@@ -9,12 +9,26 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var actived = false
+    
     var body: some View {
         ScrollView() {
-            CardView()
-            CardView()
-            CardView()
-        }
+            ForEach(0..<5, id: \.self) { _ in
+                CardView(cardActived: false)
+                .onTapGesture { self.actived.toggle() }
+            }
+            if self.actived {
+                CardView(cardActived: true)
+                    .transition(.moveAndScale)
+                    .zIndex(1)
+                    .animation(.default)
+                    .background(Color.white)
+                    .onTapGesture {
+                        self.actived.toggle()
+                }
+            }
+        }.statusBar(hidden: actived ? true : false)
     }
 }
 
