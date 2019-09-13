@@ -8,6 +8,7 @@
 
 import SwiftUI
 
+// MARK: - Card Details View
 struct CardDetailsView: View {
     var body: some View {
         VStack {

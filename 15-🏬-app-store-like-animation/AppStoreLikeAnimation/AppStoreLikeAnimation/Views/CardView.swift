@@ -17,14 +17,25 @@ extension AnyTransition {
     }
 }
 
+struct CardModifier: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .background(Color.white)
+        .cornerRadius(16)
+        .shadow(color: Color.black.opacity(0.25), radius: 16)
+    }
+}
+
 // MARK: - Card View
 struct CardView: View {
     
-    @State var cardActived: Bool
+    @State private var cardActived: Bool = false
     
     var body: some View {
         ScrollView {
             ZStack {
+                
+                // MARK: Card Header
                 Rectangle()
                     .foregroundColor(Color.gray)
                     .cornerRadius(cardActived ? 0 : 16)
@@ -45,6 +56,8 @@ struct CardView: View {
                         .font(.headline)
                         .padding(.bottom)
                     }.padding()
+                
+                // MARK: Close Button on Header
                 if self.cardActived {
                     VStack {
                         HStack {
@@ -60,6 +73,8 @@ struct CardView: View {
             .frame(height: 500)
             .padding(cardActived ? 0 :16)
             .onTapGesture { self.cardActived.toggle()}
+            
+            // MARK: Card Details View
             if self.cardActived {
                 CardDetailsView().transition(.moveAndScale)
             }
@@ -72,9 +87,10 @@ struct CardView: View {
 }
 
 struct CardView_Previews: PreviewProvider {
+    
+    @State static var cardIsActived: Bool = true
+    
     static var previews: some View {
-        ZStack {
-            CardView(cardActived: false)
-        }
+        CardView()
     }
 }
