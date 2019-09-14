@@ -9,31 +9,27 @@
 import SwiftUI
 
 // MARK: - Setup
-
 extension CGRect {
     var center: CGPoint { return CGPoint(x: midX, y: midY) }
 }
 
+
+// MARK: - Content View
 struct ContentView: View {
+    var body: some View {
+        CardListView()
+    }
+}
+
+// MARK: - Card List View
+struct CardListView: View {
     
     @State var cardActived: Bool = false
-    @State var sourceRect: CGRect? = nil
     
     var body: some View {
         ScrollView {
             ForEach(0..<10, id: \.self) { _ in
-                CardView()
-                .onTapGesture {
-                    self.cardActived = true
-                }
-            }
-            if self.cardActived {
-                CardView()
-                    .zIndex(1)
-                    .position(x: screenSize.midX, y: screenSize.midY)
-                    .onTapGesture {
-                        self.cardActived = false
-                }
+                CardCellView()
             }
         }
         .statusBar(hidden: cardActived ? true : false)

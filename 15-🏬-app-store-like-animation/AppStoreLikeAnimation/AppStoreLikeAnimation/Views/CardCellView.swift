@@ -1,5 +1,5 @@
 //
-//  CardView.swift
+//  CardCellView.swift
 //  AppStoreLikeAnimation
 //
 //  Created by Frad LEE on 9/10/19.
@@ -26,10 +26,11 @@ struct CardModifier: ViewModifier {
     }
 }
 
-// MARK: - Card View
-struct CardView: View {
+
+// MARK: - Card Cell View
+struct CardCellView: View {
     
-    @State private var cardActived: Bool = false
+    @State var cardActived: Bool = false
     
     var body: some View {
         ScrollView {
@@ -37,14 +38,16 @@ struct CardView: View {
                 
                 // MARK: Card Header
                 Rectangle()
-                    .foregroundColor(Color.gray)
+                    .foregroundColor(Color.blue)
                     .cornerRadius(cardActived ? 0 : 16)
                 VStack(alignment: .leading) {
                     Text("Get Started".uppercased())
+                        .foregroundColor(Color.white)
                         .font(.headline)
                         .padding(.top, cardActived ? 50 : nil)
                     HStack {
                         Text("Title of the Super App")
+                            .foregroundColor(Color.white)
                             .font(.largeTitle)
                             .fontWeight(.black)
                             .multilineTextAlignment(.leading)
@@ -53,11 +56,12 @@ struct CardView: View {
                     }
                     Spacer()
                     Text("The most descriptive text ever")
+                        
                         .font(.headline)
                         .padding(.bottom)
                     }.padding()
                 
-                // MARK: Close Button on Header
+                // MARK: Close Button Logic
                 if self.cardActived {
                     VStack {
                         HStack {
@@ -74,23 +78,21 @@ struct CardView: View {
             .padding(cardActived ? 0 :16)
             .onTapGesture { self.cardActived.toggle()}
             
-            // MARK: Card Details View
+            // MARK: Expanding/Collapsing Logic
             if self.cardActived {
                 CardDetailsView().transition(.moveAndScale)
             }
         }
-        .frame(height: cardActived ? screenSize.height : 532, alignment: .top)
+        .frame(height: cardActived ? screenSize.height : nil, alignment: .top)
         .edgesIgnoringSafeArea(.all)
         .statusBar(hidden: cardActived ? true : false)
         .animation(.easeInOut(duration: 0.5))
     }
 }
 
-struct CardView_Previews: PreviewProvider {
-    
-    @State static var cardIsActived: Bool = true
+struct CardCellView_Previews: PreviewProvider {
     
     static var previews: some View {
-        CardView()
+        CardCellView()
     }
 }
