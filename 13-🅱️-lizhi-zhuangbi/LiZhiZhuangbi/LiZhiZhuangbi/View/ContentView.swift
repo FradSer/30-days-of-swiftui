@@ -8,15 +8,13 @@
 
 import SwiftUI
 
-let backgroundColor: Color = Color(red: 252/255, green: 247/255, blue: 247/255)
+let backgroundColor: Color = Color(red: 252 / 255, green: 247 / 255, blue: 247 / 255)
 let defaultLyrics = Lyrics(id: 0, lyrics: "lyrics", title: "title", videoID: "videoID")
 
 struct ContentView: View {
-    
     @ObservedObject var lyricsLisViewModel = LyricsListViewModel()
 
     var body: some View {
-        
         return ZStack {
             Rectangle()
                 .foregroundColor(backgroundColor)
@@ -42,7 +40,7 @@ struct ContentView: View {
                             Circle()
                                 .frame(width: 200, height: 200, alignment: .center)
                                 .foregroundColor(Color.black).shadow(radius: 32)
-                            Group{
+                            Group {
                                 Text("Zhuang").font(.system(size: 56, weight: .regular, design: .serif)).offset(y: -19).opacity(0.7)
                                 Text("Bi").font(.system(size: 72, weight: .bold, design: .serif)).offset(x: 40, y: 17).opacity(0.9)
                             }.foregroundColor(Color.white)
@@ -57,9 +55,7 @@ struct ContentView: View {
                 }
             }
         }.animation(.easeInOut)
-        
     }
-    
 }
 
 //            WebView(request: URLRequest(url: URL(string: "https://www.youtube.com/embed/Xys5wvaDUnQ?autoplay=1&modestbranding=0&autohide=1&title=1&controls=0")!))

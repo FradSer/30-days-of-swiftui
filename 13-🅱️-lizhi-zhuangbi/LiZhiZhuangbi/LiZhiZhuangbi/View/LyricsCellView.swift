@@ -6,14 +6,14 @@
 //  Copyright © 2019 Frad LEE. All rights reserved.
 //
 
-import SwiftUI
 import Combine
+import SwiftUI
 
-let zhuangbiRed: Color = Color(red: 239/55, green: 40/255, blue: 24/255)
+let zhuangbiRed: Color = Color(red: 239 / 55, green: 40 / 255, blue: 24 / 255)
 
 struct LyricsCellView: View {
     var lyrics: Lyrics
-    
+
     var body: some View {
         ZStack {
             VStack {
@@ -33,11 +33,11 @@ struct LyricsCellView: View {
 }
 
 #if DEBUG
-let lyrics = Lyrics(id: 0, lyrics: "lyrics", title: "title", videoID: "videoID")
+    let lyrics = Lyrics(id: 0, lyrics: "lyrics", title: "title", videoID: "videoID")
 
-struct LyricsCellView_Previews: PreviewProvider {
-    static var previews: some View {
-        LyricsCellView(lyrics: lyrics)
+    struct LyricsCellView_Previews: PreviewProvider {
+        static var previews: some View {
+            LyricsCellView(lyrics: lyrics)
+        }
     }
-}
 #endif

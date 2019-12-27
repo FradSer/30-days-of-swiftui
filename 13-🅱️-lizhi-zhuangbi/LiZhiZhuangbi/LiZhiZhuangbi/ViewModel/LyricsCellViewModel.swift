@@ -10,16 +10,16 @@ import Foundation
 
 public class LyricsCellViewModel {
     private var lyrics: Lyrics
-    
+
     init(lyrics: Lyrics) {
-           self.lyrics = lyrics
-       }
-    
-    func getLyrics() -> String {
-        return self.lyrics.lyrics
+        self.lyrics = lyrics
     }
-    
+
+    func getLyrics() -> String {
+        return lyrics.lyrics
+    }
+
     func getTitle() -> String {
-        return self.lyrics.title
+        return lyrics.title
     }
 }
