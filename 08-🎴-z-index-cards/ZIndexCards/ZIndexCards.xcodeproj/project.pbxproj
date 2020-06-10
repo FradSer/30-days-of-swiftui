@@ -16,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		52CAAFAE2490DBE8005B03F0 /* ZIndexCards.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ZIndexCards.entitlements; sourceTree = "<group>"; };
 		CBEFC99823047009002C729C /* ZIndexCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZIndexCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBEFC99B23047009002C729C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBEFC99D23047009002C729C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -56,6 +57,7 @@
 		CBEFC99A23047009002C729C /* ZIndexCards */ = {
 			isa = PBXGroup;
 			children = (
+				52CAAFAE2490DBE8005B03F0 /* ZIndexCards.entitlements */,
 				CBEFC99B23047009002C729C /* AppDelegate.swift */,
 				CBEFC99D23047009002C729C /* SceneDelegate.swift */,
 				CBEFC99F23047009002C729C /* ContentView.swift */,
@@ -284,6 +286,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ZIndexCards/ZIndexCards.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "ZIndexCards/Preview\\ Content";
 				DEVELOPMENT_TEAM = 6494F8NQFF;
@@ -295,6 +298,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = me.frad.ZIndexCards;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -304,6 +308,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ZIndexCards/ZIndexCards.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "ZIndexCards/Preview\\ Content";
 				DEVELOPMENT_TEAM = 6494F8NQFF;
@@ -315,6 +320,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = me.frad.ZIndexCards;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

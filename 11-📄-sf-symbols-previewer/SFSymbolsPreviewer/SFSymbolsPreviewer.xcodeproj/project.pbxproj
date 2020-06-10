@@ -18,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		52C898C6248FA06D00A80AC4 /* SFSymbolsPreviewer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SFSymbolsPreviewer.entitlements; sourceTree = "<group>"; };
 		CB0C4E79230EF5FA00EFA2E2 /* SFSymbolsPreviewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SFSymbolsPreviewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB0C4E7C230EF5FA00EFA2E2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB0C4E7E230EF5FA00EFA2E2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +61,7 @@
 		CB0C4E7B230EF5FA00EFA2E2 /* SFSymbolsPreviewer */ = {
 			isa = PBXGroup;
 			children = (
+				52C898C6248FA06D00A80AC4 /* SFSymbolsPreviewer.entitlements */,
 				CB0C4E90230EF62300EFA2E2 /* Symbols.swift */,
 				CB0C4E7C230EF5FA00EFA2E2 /* AppDelegate.swift */,
 				CB0C4E7E230EF5FA00EFA2E2 /* SceneDelegate.swift */,
@@ -296,6 +298,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SFSymbolsPreviewer/SFSymbolsPreviewer.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "SFSymbolsPreviewer/Preview\\ Content";
 				DEVELOPMENT_TEAM = 6494F8NQFF;
@@ -307,6 +310,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = me.frad.SFSymbolsPreviewer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -316,6 +320,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SFSymbolsPreviewer/SFSymbolsPreviewer.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "SFSymbolsPreviewer/Preview\\ Content";
 				DEVELOPMENT_TEAM = 6494F8NQFF;
@@ -327,6 +332,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = me.frad.SFSymbolsPreviewer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

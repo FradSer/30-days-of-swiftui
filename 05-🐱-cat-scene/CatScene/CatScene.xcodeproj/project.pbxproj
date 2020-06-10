@@ -18,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		52CAAFB22490DE6D005B03F0 /* CatScene.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CatScene.entitlements; sourceTree = "<group>"; };
 		CB0DA19E22FDEF8000089965 /* CatScene.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatScene.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB0DA1A122FDEF8000089965 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB0DA1A322FDEF8000089965 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +61,7 @@
 		CB0DA1A022FDEF8000089965 /* CatScene */ = {
 			isa = PBXGroup;
 			children = (
+				52CAAFB22490DE6D005B03F0 /* CatScene.entitlements */,
 				CB9BC3BE22FDF8D200C469C3 /* cat.scn */,
 				CB0DA1A122FDEF8000089965 /* AppDelegate.swift */,
 				CB0DA1A322FDEF8000089965 /* SceneDelegate.swift */,
@@ -292,6 +294,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CatScene/CatScene.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "CatScene/Preview\\ Content";
 				DEVELOPMENT_TEAM = 6494F8NQFF;
@@ -303,6 +306,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = me.frad.CatScene;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -312,6 +316,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CatScene/CatScene.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "CatScene/Preview\\ Content";
 				DEVELOPMENT_TEAM = 6494F8NQFF;
@@ -323,6 +328,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = me.frad.CatScene;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

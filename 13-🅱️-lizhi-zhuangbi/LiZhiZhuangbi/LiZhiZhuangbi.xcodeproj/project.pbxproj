@@ -22,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5234043A2490E88700FCF584 /* LiZhiZhuangbi.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LiZhiZhuangbi.entitlements; sourceTree = "<group>"; };
 		CB68F3372316EB9300EC0F57 /* LiZhiZhuangbi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiZhiZhuangbi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB68F33A2316EB9300EC0F57 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CB68F33C2316EB9300EC0F57 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +69,7 @@
 		CB68F3392316EB9300EC0F57 /* LiZhiZhuangbi */ = {
 			isa = PBXGroup;
 			children = (
+				5234043A2490E88700FCF584 /* LiZhiZhuangbi.entitlements */,
 				CB68F33A2316EB9300EC0F57 /* AppDelegate.swift */,
 				CB68F33C2316EB9300EC0F57 /* SceneDelegate.swift */,
 				CBAD398A23198CF7006EA612 /* Font */,
@@ -340,6 +342,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LiZhiZhuangbi/LiZhiZhuangbi.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "LiZhiZhuangbi/Preview\\ Content";
 				DEVELOPMENT_TEAM = 6494F8NQFF;
@@ -351,6 +354,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = me.frad.LiZhiZhuangbi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -360,6 +364,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = LiZhiZhuangbi/LiZhiZhuangbi.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "LiZhiZhuangbi/Preview\\ Content";
 				DEVELOPMENT_TEAM = 6494F8NQFF;
@@ -371,6 +376,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = me.frad.LiZhiZhuangbi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
