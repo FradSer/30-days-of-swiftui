@@ -55,15 +55,6 @@ struct ContentView: View {
                 ForEach(0..<self.list.count, id: \.self) { i in
                     CardView(index: Double(self.list[i]),content: self.content[i], color: self.color[i])
                         .scaleEffect(self.list[i] == 0 ? (self.dragState.isActive ? 1.2 : 1.0) : 1.0)
-                        .rotationEffect(Angle(degrees:
-                            self.dragState.isActive ? 0 : (
-                                self.list[i] == 0 ? 0 : (
-                                    self.list[i] == -1 ? Double.random(in: 0...24) : (
-                                        self.list[i] == -2 ? Double.random(in: -24...0) : 0
-                                    )
-                                )
-                            )
-                        ))
                         .gesture(gesture)
                         .offset(
                             x: self.list[i] == 0 ? self.viewState.width + self.dragState.translation.width * 0.8 : .zero,
@@ -78,8 +69,8 @@ struct ContentView: View {
                     .foregroundColor(Color.black.opacity(0.5))
                     .font(.system(size: 17, weight: .regular))
                     .italic()
-                    .padding(.top, 16)
-                    .padding(.bottom, 16)
+                    .padding(.top, 16.0)
+                    .padding(.bottom, 16.0)
             }
         }
         
@@ -121,6 +112,7 @@ struct CardView: View {
         }
         .frame(width: 264, height: 400, alignment: .center)
         .zIndex(index)
+        .rotationEffect(Angle(degrees:Double.random(in: -24...24)))
     }
 }
 
