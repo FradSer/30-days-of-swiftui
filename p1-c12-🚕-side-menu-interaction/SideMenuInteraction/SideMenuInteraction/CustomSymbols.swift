@@ -11,6 +11,3 @@ import UIKit
 
 let menuListImage: UIImage = UIImage(named: "menu.list")!
     .withConfiguration(UIImage.SymbolConfiguration(pointSize: 32, weight: .regular, scale: .medium))
-
-let heartImage: UIImage = UIImage(named: "heart")!
-    .withConfiguration(UIImage.SymbolConfiguration(pointSize: 32, weight: .regular, scale: .medium))

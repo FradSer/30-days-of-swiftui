@@ -10,7 +10,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var sideMenuActived: Bool = false
-    
+
     var body: some View {
         ZStack {
             BackgroundView()
@@ -20,16 +20,13 @@ struct ContentView: View {
                     .shadow(radius: sideMenuActived ? 32 : 0)
                 VStack {
                     HStack {
-                        Button(action: {self.sideMenuActived.toggle()}) {
+                        Button(action: { self.sideMenuActived.toggle() }) {
                             Image(uiImage: menuListImage).accentColor(Color.white)
                                 .frame(width: 44, height: 44, alignment: .center)
                                 .scaleEffect(sideMenuActived ? 1.2 : 1)
                         }.padding(.top, 64).padding(.leading, 32)
                         Spacer()
                     }
-//                    HStack {
-//                        Spacer()
-//                    }
                     Spacer()
                 }
             }
@@ -39,38 +36,33 @@ struct ContentView: View {
             VStack {
                 Spacer()
                 Text("a little work with 🚕")
-                .foregroundColor(Color.black.opacity(0.5))
-                .font(.system(size: 17, weight: .regular))
-                .italic()
-                .padding(16)
+                    .foregroundColor(Color.black.opacity(0.5))
+                    .font(.system(size: 17, weight: .regular))
+                    .italic()
+                    .padding(16)
             }
         }
-        
-        
     }
 }
 
 struct BackgroundView: View {
     var body: some View {
-        ZStack {
-            Spacer()
-                .background(Color(red: 232/255, green: 237/255, blue: 233/255)).edgesIgnoringSafeArea(.all)
-            HStack {
-//                Image(uiImage: heartImage)
-                Spacer()
-            }
-        }
+        Spacer()
+            .background(Color(red: 232 / 255, green: 237 / 255, blue: 233 / 255)).edgesIgnoringSafeArea(.all)
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .previewLayout(.sizeThatFits)
+            
     }
 }
 
 struct BackgroundView_Previews: PreviewProvider {
     static var previews: some View {
         BackgroundView()
+            .previewLayout(.sizeThatFits)
     }
 }
