@@ -9,6 +9,11 @@
 import SwiftUI
 
 struct ContentView : View {
+    @GestureState var dragState = DragState.inactive
+    
+    @State var viewState = CGSize.zero
+    @State var rotationX: Double
+    
     enum DragState {
         case inactive
         case active(translation: CGSize)
@@ -29,11 +34,6 @@ struct ContentView : View {
             }
         }
     }
-    
-    @GestureState var dragState = DragState.inactive
-    @State var viewState = CGSize.zero
-    
-    @State var rotationX: Double
     
     var body: some View {
         
@@ -74,16 +74,14 @@ struct ContentView : View {
                 Image(systemName: "0.circle")
                     .font(.system(size: 20))
                 Slider(value: $rotationX, in: 0.0...45.0, step: 1.0)
-                .accentColor(Color.black)
                 Image(systemName: "45.circle")
                     .font(.system(size: 24))
             }.padding(.all, 32)
             Text("a little work with 🔠")
-                .foregroundColor(Color.black.opacity(0.5))
+                .opacity(0.75)
                 .font(.system(size: 17, weight: .regular))
-                .italic()
-                .padding(.top, 16)
-                .padding(.bottom, 16)
+                .multilineTextAlignment(.center)
+                .padding(.vertical, 16)
         }
     }
 }
@@ -92,6 +90,7 @@ struct ContentView : View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView(rotationX: 0.0)
+            .previewLayout(.fixed(width: 800.0, height: 800.0))
     }
 }
 #endif
