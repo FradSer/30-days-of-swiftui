@@ -23,11 +23,11 @@ Text("Typeface")
 
 Emmm...This is a long story. [This article](https://developer.apple.com/documentation/swiftui/gestures/composing_swiftui_gestures) by Apple is really the one you must read it. If you want know more, [this article](https://mecid.github.io/2019/07/10/gestures-in-swiftui/) will help you.
 
-But all above two articles is sample of `[LongPressGesture](https://www.google.com/search?client=safari&rls=en&q=LongPressGestures&ie=UTF-8&oe=UTF-8)` which mens:
+But all above two articles is sample of [`LongPressGesture`](https://www.google.com/search?client=safari&rls=en&q=LongPressGestures&ie=UTF-8&oe=UTF-8) which mens:
 
 > A gesture that ends once a long-press event sequence has been recognized.
 
-It's not a common gesture but very useful to understand how `.gesture()` works. In this case, we use `[DragGesture](https://developer.apple.com/documentation/swiftui/draggesture)`.
+It's not a common gesture but very useful to understand how `.gesture()` works. In this case, we use [`DragGesture`](https://developer.apple.com/documentation/swiftui/draggesture).
 
 #### Define the Drag Gesture
 
